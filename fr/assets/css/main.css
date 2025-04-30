@@ -1218,8 +1218,8 @@ section,
   padding: 5px 15px;
   max-width: 90%;
   transition: 0.3s;
-  opacity: 0.5;
-  filter: grayscale(100);
+  opacity: 0.7;
+  /* filter: grayscale(100); */
 }
 
 .clients .client-logo img:hover {
@@ -1887,9 +1887,28 @@ section,
   color: var(--accent-color);
 }
 
+
+.flag-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 8px;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.title-text {
+  color: #04ba9b !important;
+}
+.title-text-light {
+  color: #04ba9b !important;
+  opacity: .7;
+}
+.title-text-light {
+  color: #04ba9b !important;
+  opacity: .7;
+  font-size: 18px;
 }

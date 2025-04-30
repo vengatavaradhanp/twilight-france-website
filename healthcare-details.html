@@ -45,36 +45,49 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo3.svg" alt="">
+        <img src="assets/img/logo3.svg" alt="" style="min-height: 60px;">
         <!-- <h1 class="sitename">Dewi</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                    class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact">Contact</a></li>
+                  <li><a href="#team">Team</a></li>
+                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Dropdown 1</a></li>
+                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                            class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                          <li><a href="#">Deep Dropdown 1</a></li>
+                          <li><a href="#">Deep Dropdown 2</a></li>
+                          <li><a href="#">Deep Dropdown 3</a></li>
+                          <li><a href="#">Deep Dropdown 4</a></li>
+                          <li><a href="#">Deep Dropdown 5</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Dropdown 2</a></li>
+                      <li><a href="#">Dropdown 3</a></li>
+                      <li><a href="#">Dropdown 4</a></li>
+                    </ul>
+                  </li> -->
+          <li><a href="index.html#contact">Contact</a></li>
+          <!-- Language Selector -->
+          <li>
+            <div class="position-relative">
+              <select class="form-select lang-select">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+              </select>
+              <i class="bi bi-globe position-absolute"
+                style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
+            </div>
+          </li>
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -90,9 +103,12 @@
     <div class="page-title dark-background" data-aos="fade"
       style="background-image: url(assets/img/page-title-bg.webp);">
       <div class="container position-relative">
-        <h1>GENIE MD - Virtual Healthcare Ecosystem</h1>
-        <!-- <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
+        <h1>HEALTHCARE SOLUTIONS</h1>
+        <br />
+        <p>At RPDC IT Solutions, we bring innovation to the healthcare ecosystem through secure, scalable, and
+          user-centric platforms. From maternal care to virtual consultations, our HIPAA-compliant solutions are
+          transforming patient engagement, provider workflows, and public health outcomes. </p>
+        <!-- <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
             <li class="current">Service Details</li>
@@ -103,92 +119,212 @@
 
     <!-- Service Details Section -->
     <section id="service-details" class="service-details section">
-
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="#" class="active">GENIE MD – Virtual Healthcare Ecosystem</a>
-              <a href="#">CURA – Maternal Healthcare Platform</a>
-              <a href="#">GoPerla 2.0 – Credential Compliance Platform</a>
+              <a href="#" class="service-tab active" data-target="geniemd">GENIE MD- Virtual Healthcare Ecosystem </a>
+              <a href="#" class="service-tab" data-target="cura">CURA – Maternal Healthcare Platform </a>
+              <a href="#" class="service-tab" data-target="goperla">GoPerla 2.0 – Credential Compliance Platform</a>
             </div>
-
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <div class="row gy-4">
+            <!-- GENIE MD Content -->
+            <div class="service-content" id="geniemd">
+              <div>
+                <!-- <div class="row gy-4">
 
-              <div class="col-lg-8">
-                <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                <div class="col-lg-8">
+                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                </div>
+              </div> -->
+
+                <div>
+                  <h4 class="title-text">Client Challenge</h4>
+                  <p>
+                    GENIE MD, a digital healthcare company, needed a secure and scalable telehealth platform to manage
+                    virtual consultations, chronic care, and remote patient monitoring. Their primary concerns were
+                    HIPAA compliance, integrating biometric devices, and ensuring uninterrupted care delivery across
+                    different geographies.
+                  </p>
+
+                </div>
+                <div>
+                  <h4 class="title-text">RPDC’s Solution</h4>
+                  <p>
+                    RPDC developed a comprehensive telehealth ecosystem that included separate portals for patients
+                    and care providers. The platform supports real-time video consultations, RPM (Remote Patient
+                    Monitoring), and RTM (Remote Therapeutic Monitoring), integrated with a wide array of medical
+                    wearables such as Fitbit, Apple Watch, and AliveCor.
+                  </p>
+                  <p>
+                    We ensured seamless EHR/EMR integration and implemented secure
+                    payment gateways, keeping compliance and user experience at the forefront.
+                  </p>
+
+                </div>
+                <div>
+                  <h4 class="title-text">Features Delivered </h4>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Real-time HD video consultations </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Biometric and remote monitoring tools (RPM, RTM)</span>
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> <span>Chronic Care Management workflows</span>
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> <span>Stripe and Nexio for payments
+                      </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>HIPAA-compliant cloud infrastructure</span></li>
+                  </ul>
+
+                </div>
+                <div>
+                  <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
+                  <h4 class="title-text">Business Impact</h4>
+
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Expanded virtual care delivery at scale</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Reduced appointment no-shows by enabling remote
+                        access</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Improved chronic care adherence through continuous
+                        monitoring
+                      </span></li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+            <!-- CURA Content -->
+            <div class="service-content d-none" id="cura">
+              <div>
+                <!-- <div class="row gy-4">
+
+                <div class="col-lg-8">
+                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                </div>
+              </div> -->
+
+                <div>
+                  <h4 class="title-text">Client Challenge</h4>
+                  <p>
+                    The Singapore Government’s Health Division aimed to digitally transform its maternal care system to
+                    support thousands of expecting mothers with real-time health tracking, secure data sharing, and
+                    automated care delivery workflows. The traditional system lacked connectivity between patients and
+                    hospitals, creating inefficiencies in tracking maternal health and managing appointments.
+                  </p>
+
+                </div>
+                <div>
+                  <h4 class="title-text">RPDC’s Solution</h4>
+                  <p>
+                    The Singapore Government’s Health Division aimed to digitally transform its maternal care system to
+                    support thousands of expecting mothers with real-time health tracking, secure data sharing, and
+                    automated care delivery workflows. The traditional system lacked connectivity between patients and
+                    hospitals, creating inefficiencies in tracking maternal health and managing appointments.
+                  </p>
+                  <p>
+                    The backend was built using scalable cloud infrastructure (AWS), with mobile apps developed using
+                    React Native and push notifications managed via Firebase Cloud Messaging (FCM).
+                  </p>
+                </div>
+                <div>
+                  <h4 class="title-text">Features Delivered</h4>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Mobile app for expecting mothers with check-up
+                        scheduling and health tracking</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span> Web portal for doctors to view and manage patient
+                        data</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Real-time vital monitoring and alerts </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>AI-driven analytics for resource planning</span></li>
+
+                    <li><i class="bi bi-check-circle"></i> <span> Scalable AWS cloud infrastructure and Google Analytics
+                        integration
+                      </span></li>
+
+                  </ul>
+
+
+                </div>
+                <div>
+                  <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
+                  <h3 class="title-text">Business Impact</h3>
+
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span> Strengthened national maternal health outcomes
+                      </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Reduced manual documentation and hospital burden
+                      </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Improved efficiency in public healthcare
+                        services</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Real-time patient-doctor communication at scale </span>
+                    </li>
+                  </ul>
+
+
+                </div>
               </div>
             </div>
 
+            <!-- GoPerla Content -->
+            <div class="service-content d-none" id="goperla">
+              <div>
+                <!-- <div class="row gy-4">
 
-            <h4>Overview</h4>
-            <p> At Twilight IT Solutions, we bring innovation to the healthcare ecosystem through secure, scalable, and
-              user-centric platforms. From maternal care to virtual consultations, our HIPAA-compliant solutions are
-              transforming patient engagement, provider workflows, and public health outcomes.</p>
-            <div>
-              <h4>Client Challenge</h4>
-              <p>
-                GENIE MD, a digital healthcare company, needed a secure and scalable telehealth platform to manage
-                virtual consultations, chronic care, and remote patient monitoring. Their primary concerns were HIPAA
-                compliance, integrating biometric devices, and ensuring uninterrupted care delivery across different
-                geographies.
-              </p>
+                <div class="col-lg-8">
+                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                </div>
+              </div> -->
 
-            </div>
-            <div>
-              <h4>Twilight’s Solution</h4>
-              <p>
-                Twilight developed a comprehensive telehealth ecosystem that included separate portals for patients and
-                care providers. The platform supports real-time video consultations, RPM (Remote Patient Monitoring),
-                and RTM (Remote Therapeutic Monitoring), integrated with a wide array of medical wearables such as
-                Fitbit, Apple Watch, and AliveCor.
-              </p>
-              <p>
-                We ensured seamless EHR/EMR integration and implemented secure
-                payment gateways, keeping compliance and user experience at the forefront.
-              </p>
-            </div>
-            <div>
-              <h4>Key Features</h4>
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Expanded virtual care delivery at scale </span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Biometric and remote monitoring tools (RPM, RTM)</span>
-                </li>
-                <li><i class="bi bi-check-circle"></i> <span>Chronic Care Management workflows </span></li>
+                <div>
+                  <h4 class="title-text">Client Challenge</h4>
+                  <p>
+                    A healthcare compliance firm needed a platform to manage and monitor the credentials of medical staff across multiple hospitals and clinics. Their existing manual system was time-consuming and risked non-compliance with audits, leading to possible legal and reputational risks for client hospitals.
+                  </p>
+
+                </div>
+                <div>
+                  <h4 class="title-text">RPDC’s Solution</h4>
+                  <p>
+                    RPDC designed and developed GoPerla 2.0, a robust cloud-based  
+compliance management platform. It automates credential tracking, sends timely expiration alerts, and allows for secure document uploads—all through a user-friendly interface. 
+                  </p>
+                  <p>Using modern frameworks like Next.js, NestJS, and GraphQL, we ensured performance, scalability, and security. The platform also integrates with AWS Cognito for user authentication and AWS services for storage and analytics.  </p>
+                </div>
+                <div>
+                  <h4 class="title-text">Key Features</h4>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Automated tracking of certifications and license expirations </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Timely renewal notifications and escalation alerts </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Secure upload and access of credential documents </span>
+                    </li>
+                    <li><i class="bi bi-check-circle"></i> <span>Real-time dashboards to monitor compliance status </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Role-based access and AWS-integrated authentication </span></li>
+                  </ul>
 
 
-                <li><i class="bi bi-check-circle"></i> <span>Integration with Allscripts (EHR)</span></li>
+                </div>
+                <div>
+                  <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
+                  <h4 class="title-text">Business Impact</h4>
 
-                <li><i class="bi bi-check-circle"></i> <span>Stripe and Nexio for payments </span></li>
-                <li><i class="bi bi-check-circle"></i> <span>HIPAA-compliant cloud infrastructure </span></li>
-              </ul>
+                  <ul>
+                    <li><i class="bi bi-check-circle"></i> <span>Achieved 100% audit readiness across client hospitals </span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Reduced admin workload by 70%</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Improved visibility into staff compliance</span></li>
+                    <li><i class="bi bi-check-circle"></i> <span>Helped hospital networks stay aligned with regulatory standards</span></li>
+                  </ul>
 
-            </div>
-            <div>
-              <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-              <h3>Business Impact</h3>
 
-              <ul>
-                <li><i class="bi bi-check-circle"></i> <span>Expanded virtual care delivery at scale </span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Reduced appointment no-shows by enabling remote access
-                  </span></li>
-                <li><i class="bi bi-check-circle"></i> <span>Improved chronic care adherence through continuous
-                    monitoring</span></li>
-              </ul>
-
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /Service Details Section -->
+    </section>
+    <!-- /Service Details Section -->
 
   </main>
 
@@ -198,14 +334,13 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo3.svg" alt="">
+            <img src="assets/img/logo3.svg" alt="" style="min-height: 60px;">
             <!-- <span class="sitename">Dewi</span> -->
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>88 Avenue Charles de Gaulee</p>
+            <p>92200 Neuilly-sur-Seine</p>
+            <p><strong>Email:</strong> <span>service.client@rondpointducommerce.fr</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -223,6 +358,7 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
           </ul>
         </div>
 
@@ -252,7 +388,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">RPDC IT Solutions</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">RPDC IT Solutions</strong> <span>All Rights
+          Reserved</span></p>
     </div>
 
   </footer>
@@ -276,6 +413,25 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll('.service-tab').forEach(tab => {
+      tab.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Remove active from all tabs
+        document.querySelectorAll('.service-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+
+        // Hide all service content blocks
+        document.querySelectorAll('.service-content').forEach(content => content.classList.add('d-none'));
+
+        // Show the selected content
+        const targetId = this.getAttribute('data-target');
+        document.getElementById(targetId).classList.remove('d-none');
+      });
+    });
+  </script>
 
 </body>
 
