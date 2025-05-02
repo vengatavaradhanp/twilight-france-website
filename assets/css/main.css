@@ -1127,6 +1127,7 @@ section,
   margin: 0;
   font-family: var(--heading-font);
   font-size: 16px;
+  white-space: nowrap;
 }
 
 /*--------------------------------------------------------------
