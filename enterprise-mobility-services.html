@@ -51,48 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -103,16 +84,11 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1 class="title-text">Enterprise Mobility & IoT </h1>
-                <p>Connected Experiences. Smarter Operations. Mobile-First Innovation.</p>
-                <p>At RPDC IT Solutions, we empower enterprises with intelligent mobility and IoT solutions that
-                    enhance agility, productivity, and real-time control—anywhere, anytime. </p>
-                <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
+                <h1 class="title-text" data-i18n="enterpriseMobilityIoTTitle">Enterprise Mobility & IoT</h1>
+                <p data-i18n="connectedExperiencesSmarterOperationsMobileFirstInnovation">Connected Experiences. Smarter
+                    Operations. Mobile-First Innovation.</p>
+                <p data-i18n="enterpriseRpdcDescription">At RPDC IT Solutions, we empower enterprises with intelligent mobility
+                    and IoT solutions that enhance agility, productivity, and real-time control—anywhere, anytime.</p>
             </div>
         </div><!-- End Page Title -->
 
@@ -120,84 +96,71 @@
         <section id="service-details" class="service-details section">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="service-tab active" data-target="genie">GENIE MD – Virtual Healthcare Ecosystem</a>
-              <a href="#" class="service-tab" data-target="cura">CURA – Maternal Healthcare Platform</a>
-              <a href="#" class="service-tab" data-target="goperla">GoPerla 2.0 – Credential Compliance Platform</a>
-            </div>
-          </div> -->
 
                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
                         <!-- GENIE MD Content -->
                         <div class="service-content" id="genie">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text " style="line-height: 50px;">What We Offer </h4>
-                                    <p class="title-text-dark">2.1 Cross-Platform Mobile App Development</p>
-                                    <p>
-                                        Build once, deploy everywhere.
-
-                                        We create powerful mobile apps for Android, iOS, and PWAs—designed for speed,
-                                        security, and seamless user experience.
-                                    </p>
-                                    <p class="title-text-dark">2.2 IoT-Enabled Smart Infrastructure & Asset Tracking
-                                    <p>Track. Monitor. Optimize. Our IoT solutions provide real-time visibility into
-                                        assets, operations, and infrastructure—boosting efficiency and reducing losses.
-                                    </p>
-                                    <p class="title-text-dark">2.3 Industry 4.0 for Smart Manufacturing </p>
-                                    <p>
-                                        Reimagine factory floors. We integrate IoT, automation, and AI to drive
-                                        intelligent, data-driven manufacturing and operational excellence.
-                                    </p>
-                                    <p class="title-text-dark">2.4 Connected Workforce Solutions</p>
-                                    <p>
-                                        Empower teams anywhere.
-                                        From field staff to remote workers, we enable real-time collaboration, tracking,
-                                        and task management across devices and locations.
-                                    </p>
-                                    <p class="title-text-dark">2.5 AI-Driven Predictive Maintenance</p>
-                                    <p>
-                                        Fix before failure.
-                                        We leverage AI and IoT to predict equipment issues in advance—minimizing
-                                        downtime and maintenance costs.
-                                    </p>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="whatWeOfferTitle">What
+                                        We Offer</h4>
+                                    <p class="title-text-dark" data-i18n="crossPlatformMobileAppDevelopmentTitle">2.1
+                                        Cross-Platform Mobile App Development</p>
+                                    <p data-i18n="crossPlatformMobileAppDevelopmentDescription">Build once, deploy
+                                        everywhere. We create powerful mobile apps for Android, iOS, and PWAs—designed
+                                        for speed, security, and seamless user experience.</p>
+                                    <p class="title-text-dark"
+                                        data-i18n="iotEnabledSmartInfrastructureAssetTrackingTitle">2.2 IoT-Enabled
+                                        Smart Infrastructure & Asset Tracking</p>
+                                    <p data-i18n="iotEnabledSmartInfrastructureAssetTrackingDescription">Track. Monitor.
+                                        Optimize. Our IoT solutions provide real-time visibility into assets,
+                                        operations, and infrastructure—boosting efficiency and reducing losses.</p>
+                                    <p class="title-text-dark" data-i18n="industry40ForSmartManufacturingTitle">2.3
+                                        Industry 4.0 for Smart Manufacturing</p>
+                                    <p data-i18n="industry40ForSmartManufacturingDescription">Reimagine factory floors.
+                                        We integrate IoT, automation, and AI to drive intelligent, data-driven
+                                        manufacturing and operational excellence.</p>
+                                    <p class="title-text-dark" data-i18n="connectedWorkforceSolutionsTitle">2.4
+                                        Connected Workforce Solutions</p>
+                                    <p data-i18n="connectedWorkforceSolutionsDescription">Empower teams anywhere. From
+                                        field staff to remote workers, we enable real-time collaboration, tracking, and
+                                        task management across devices and locations.</p>
+                                    <p class="title-text-dark" data-i18n="aiDrivenPredictiveMaintenanceTitle">2.5
+                                        AI-Driven Predictive Maintenance</p>
+                                    <p data-i18n="aiDrivenPredictiveMaintenanceDescription">Fix before failure. We
+                                        leverage AI and IoT to predict equipment issues in advance—minimizing downtime
+                                        and maintenance costs.</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Why RPDC IT Solutions? </h4>
+                                    <h4 class="title-text" style="line-height: 50px;"
+                                        data-i18n="whyRPDCITSolutionsTitle">Why RPDC IT Solutions?</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Proven expertise in enterprise
-                                                mobility & IoT platforms</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>End-to-end delivery from app to
-                                                sensor to cloud</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Scalable, secure, and future-ready
-                                                architecture</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Industry-specific solutions with
-                                                measurable ROI</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="provenExpertiseInEnterpriseMobilityIoTPlatforms">Proven
+                                                expertise in enterprise mobility & IoT platforms</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="endToEndDeliveryFromAppToSensorToCloud">End-to-end delivery
+                                                from app to sensor to cloud</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="scalableSecureFutureReadyArchitecture">Scalable, secure, and
+                                                future-ready architecture</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="industrySpecificSolutionsWithMeasurableROI">Industry-specific
+                                                solutions with measurable ROI</span></li>
                                     </ul>
-
-
                                 </div>
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Let’s connect your enterprise to
-                                        the future. </h4>
-                                    <p>Talk to us about your mobility & IoT needs today.  </p>
-                                    <a href="index.html#contact">Connect with us today. </a>
+                                    <h4 class="title-text" style="line-height: 50px;"
+                                        data-i18n="letsConnectYourEnterpriseToTheFutureTitle">Let’s connect your
+                                        enterprise to the future.</h4>
+                                    <p data-i18n="talkToUsAboutYourMobilityIoTNeeds">Talk to us about your mobility &
+                                        IoT needs today.</p>
+                                    <a href="index.html#contact" data-i18n="connectWithUsToday">Connect with us
+                                        today.</a>
                                 </div>
-
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -205,6 +168,7 @@
         <!-- /Service Details Section -->
 
     </main>
+
 
     <footer id="footer" class="footer dark-background">
 
@@ -231,12 +195,13 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -292,6 +257,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

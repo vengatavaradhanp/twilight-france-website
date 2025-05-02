@@ -51,48 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -103,17 +84,11 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1 class="title-text">Digital Transformation Service </h1>
-                <p>Transform Boldly. Operate Smarter. Engage Deeper. </p>
-                <p>At RPDC IT Solutions, we don’t just digitize—we reimagine how your business operates. From
-                    strategy to execution, we fuse innovation and intelligence to accelerate transformation and
-                    future-proof your organization. </p>
-                <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
+                <h1 class="title-text" data-i18n="digitalTransformationTitle">Digital Transformation Service</h1>
+                <p data-i18n="digitalTransformationSubtitle">Transform Boldly. Operate Smarter. Engage Deeper.</p>
+                <p data-i18n="digitalTransformationIntro">At RPDC IT Solutions, we don’t just digitize—we reimagine how
+                    your business operates. From strategy to execution, we fuse innovation and intelligence to
+                    accelerate transformation and future-proof your organization.</p>
             </div>
         </div><!-- End Page Title -->
 
@@ -121,112 +96,94 @@
         <section id="service-details" class="service-details section">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="service-tab active" data-target="genie">GENIE MD – Virtual Healthcare Ecosystem</a>
-              <a href="#" class="service-tab" data-target="cura">CURA – Maternal Healthcare Platform</a>
-              <a href="#" class="service-tab" data-target="goperla">GoPerla 2.0 – Credential Compliance Platform</a>
-            </div>
-          </div> -->
 
                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-                        <!-- GENIE MD Content -->
                         <div class="service-content" id="genie">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text " style="line-height: 50px;">Our Digital Edge – What We
-                                        Deliver </h4>
-                                    <p class="title-text-dark">7.1. Digital Strategy & Transformation Roadmaps </p>
-                                    <p>
-                                        Plan with purpose, execute with clarity.
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="digitalEdgeTitle">Our
+                                        Digital Edge – What We Deliver</h4>
 
+                                    <p class="title-text-dark" data-i18n="digitalStrategyTitle">7.1. Digital Strategy &
+                                        Transformation Roadmaps</p>
+                                    <p data-i18n="digitalStrategyDescription">Plan with purpose, execute with clarity.
                                         We develop tailored strategies and actionable roadmaps that align your
                                         technology investments with business goals—driving measurable impact, agility,
-                                        and long-term growth.
-                                    </p>
-                                    <p class="title-text-dark">7.2. Cloud Migration & Modernization </p>
-                                    <p>
-                                        Go cloud, stay ahead.
+                                        and long-term growth.</p>
 
-                                        We modernize legacy systems and migrate your infrastructure to scalable, secure
-                                        cloud environments like AWS, Azure, and GCP—reducing costs and enhancing
-                                        performance.
-                                    </p>
-                                    <p class="title-text-dark">7.3. AI-Driven Automation & Optimization </p>
-                                    <p>
-                                        Smarter processes, greater efficiency.
+                                    <p class="title-text-dark" data-i18n="cloudMigrationTitle">7.2. Cloud Migration &
+                                        Modernization</p>
+                                    <p data-i18n="cloudMigrationDescription">Go cloud, stay ahead. We modernize legacy
+                                        systems and migrate your infrastructure to scalable, secure cloud environments
+                                        like AWS, Azure, and GCP—reducing costs and enhancing performance.</p>
 
-                                        We implement intelligent automation and AI-powered workflows to streamline
+                                    <p class="title-text-dark" data-i18n="aiAutomationTitle">7.3. AI-Driven Automation &
+                                        Optimization</p>
+                                    <p data-i18n="aiAutomationDescription">Smarter processes, greater efficiency. We
+                                        implement intelligent automation and AI-powered workflows to streamline
                                         operations, eliminate bottlenecks, and improve productivity across the board.
                                     </p>
-                                    <p class="title-text-dark">7.4. Data-Driven Decision Making & Advanced Analytics
-                                    </p>
-                                    <p>
-                                        Insights that move the needle.
 
-                                        Turn data into your greatest asset. We help you leverage advanced analytics and
-                                        predictive insights to drive faster, smarter decision-making at every level.
-                                    </p>
-                                    <p class="title-text-dark">7.5. Customer Experience Optimization & Digital
-                                        Engagement </p>
-                                    <p>
-                                        Win hearts in every interaction.
+                                    <p class="title-text-dark" data-i18n="dataDrivenDecisionTitle">7.4. Data-Driven
+                                        Decision Making & Advanced Analytics</p>
+                                    <p data-i18n="dataDrivenDecisionDescription">Insights that move the needle. Turn
+                                        data into your greatest asset. We help you leverage advanced analytics and
+                                        predictive insights to drive faster, smarter decision-making at every level.</p>
 
-                                        We craft seamless, personalized digital experiences across web, mobile, and
+                                    <p class="title-text-dark" data-i18n="customerExperienceTitle">7.5. Customer
+                                        Experience Optimization & Digital Engagement</p>
+                                    <p data-i18n="customerExperienceDescription">Win hearts in every interaction. We
+                                        craft seamless, personalized digital experiences across web, mobile, and
                                         omnichannel platforms to deepen engagement, boost retention, and elevate your
-                                        brand.
-                                    </p>
-                                    <p class="title-text-dark">7.6. Emerging Technologies – IoT, Blockchain, and Smart
-                                        Solutions </p>
-                                    <p>
-                                        Innovation that unlocks new possibilities.
+                                        brand.</p>
 
-                                        We bring the latest tech—like IoT, blockchain, and smart solutions—into play to
-                                        power new business models, enhance operations, and set you apart from the
-                                        competition.
-                                    </p>
+                                    <p class="title-text-dark" data-i18n="emergingTechnologiesTitle">7.6. Emerging
+                                        Technologies – IoT, Blockchain, and Smart Solutions</p>
+                                    <p data-i18n="emergingTechnologiesDescription">Innovation that unlocks new
+                                        possibilities. We bring the latest tech—like IoT, blockchain, and smart
+                                        solutions—into play to power new business models, enhance operations, and set
+                                        you apart from the competition.</p>
                                 </div>
+
                                 <br />
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Why RPDC IT Solutions? </h4>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="whyRPDCTransformation">
+                                        Why RPDC IT Solutions?</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Deep domain expertise across
-                                                healthcare, fintech, and e-commerce</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Customized, end-to-end solutions
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="deepDomainExpertise">Deep domain expertise across healthcare,
+                                                fintech, and e-commerce</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="customEndToEndSolutions">Customized, end-to-end solutions
                                                 focused on real business outcomes</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Proven success in delivering
-                                                scalable, secure, and future-ready systems</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Agile delivery teams with a passion
-                                                for innovation</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="provenScalableSystems">Proven success in delivering scalable,
+                                                secure, and future-ready systems</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="agileInnovativeTeams">Agile delivery teams with a passion for
+                                                innovation</span></li>
                                     </ul>
-
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Ready to Lead in the Digital-First
-                                        World? </h4>
-                                    <p>Let’s build your digital future—together. </p>
-                                    <a href="index.html#contact">Connect with us today. </a>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="readyToLeadTitle">Ready
+                                        to Lead in the Digital-First World?</h4>
+                                    <p data-i18n="buildDigitalFuture">Let’s build your digital future—together.</p>
+                                    <a href="index.html#contact" data-i18n="connectWithUsToday">Connect with us
+                                        today.</a>
                                 </div>
 
                             </div>
-
                         </div>
-
-
                     </div>
+
                 </div>
             </div>
         </section>
         <!-- /Service Details Section -->
 
     </main>
+
 
     <footer id="footer" class="footer dark-background">
 
@@ -253,12 +210,13 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -314,6 +272,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

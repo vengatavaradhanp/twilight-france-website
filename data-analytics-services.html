@@ -51,48 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -103,17 +84,12 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1 class="title-text">Data Analytics & Business Intelligence </h1>
-                <p>Data Analytics & Business Intelligence</p>
-                <p>At RPDC IT Solutions, we transform raw data into real-time intelligence. Our analytics solutions
-                    empower smarter decisions, sharper strategies, and
-                    measurable growth. </p>
-                <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
+                <h1 class="title-text" data-i18n="servicesDataAnalyticsBITitle">Data Analytics & Business Intelligence
+                </h1>
+                <p data-i18n="servicesDataAnalyticsBISubTitle">Data Analytics & Business Intelligence</p>
+                <p data-i18n="servicesDataAnalyticsBIDescription">At RPDC IT Solutions, we transform raw data into
+                    real-time intelligence. Our analytics solutions empower smarter decisions, sharper strategies, and
+                    measurable growth.</p>
             </div>
         </div><!-- End Page Title -->
 
@@ -121,88 +97,77 @@
         <section id="service-details" class="service-details section">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="service-tab active" data-target="genie">GENIE MD – Virtual Healthcare Ecosystem</a>
-              <a href="#" class="service-tab" data-target="cura">CURA – Maternal Healthcare Platform</a>
-              <a href="#" class="service-tab" data-target="goperla">GoPerla 2.0 – Credential Compliance Platform</a>
-            </div>
-          </div> -->
 
                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
-                        <!-- GENIE MD Content -->
                         <div class="service-content" id="genie">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text " style="line-height: 50px;">Our Capabilities </h4>
-                                    <p class="title-text-dark">6.1 Data Engineering & Advanced Analytics</p>
-                                    <p>
-                                        Build strong data foundations. We design scalable pipelines and analytics
-                                        frameworks to unify, process, and prepare your data for action.
-                                    </p>
-                                    <p class="title-text-dark">6.2 AI-Driven Business Intelligence Dashboards </p>
-                                    <p>
-                                        See more. Know more. Act faster.
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="ourCapabilitiesTitle">
+                                        Our Capabilities</h4>
 
-                                        We build dynamic BI dashboards powered by AI—giving you real-time insights at
-                                        your fingertips.
-                                    </p>
-                                    <p class="title-text-dark">6.3 Market & Customer Trends Analysis</p>
-                                    <p>
-                                        Stay ahead of the curve.
+                                    <p class="title-text-dark" data-i18n="dataEngineeringAdvancedAnalyticsTitle">6.1
+                                        Data Engineering & Advanced Analytics</p>
+                                    <p data-i18n="dataEngineeringAdvancedAnalyticsDescription">Build strong data
+                                        foundations. We design scalable pipelines and analytics frameworks to unify,
+                                        process, and prepare your data for action.</p>
 
-                                        We analyze behavioral patterns and market shifts to help you anticipate trends
-                                        and fine-tune your strategy.
-                                    </p>
-                                    <p class="title-text-dark">6.4 Data Visualization & Automated Reporting </p>
-                                    <p>
-                                        Make your data speak.
+                                    <p class="title-text-dark" data-i18n="aiDrivenBIDashboardsTitle">6.2 AI-Driven
+                                        Business Intelligence Dashboards</p>
+                                    <p data-i18n="aiDrivenBIDashboardsDescription">See more. Know more. Act faster. We
+                                        build dynamic BI dashboards powered by AI—giving you real-time insights at your
+                                        fingertips.</p>
 
+                                    <p class="title-text-dark" data-i18n="marketCustomerTrendsAnalysisTitle">6.3 Market
+                                        & Customer Trends Analysis</p>
+                                    <p data-i18n="marketCustomerTrendsAnalysisDescription">Stay ahead of the curve. We
+                                        analyze behavioral patterns and market shifts to help you anticipate trends and
+                                        fine-tune your strategy.</p>
+
+                                    <p class="title-text-dark" data-i18n="dataVisualizationAutomatedReportingTitle">6.4
+                                        Data Visualization & Automated Reporting</p>
+                                    <p data-i18n="dataVisualizationAutomatedReportingDescription">Make your data speak.
                                         We create interactive visuals and auto-generated reports for faster, clearer
-                                        decision-making.
-                                    </p>
-                                    <p class="title-text-dark">6.5 Predictive Analytics for Operational Efficiency </p>
-                                    <p>
-                                        Plan smarter. Operate better.
+                                        decision-making.</p>
 
-                                        Our predictive models help you forecast demand, optimize resources, and reduce
-                                        downtime.
-                                    </p>
+                                    <p class="title-text-dark"
+                                        data-i18n="predictiveAnalyticsOperationalEfficiencyTitle">6.5 Predictive
+                                        Analytics for Operational Efficiency</p>
+                                    <p data-i18n="predictiveAnalyticsOperationalEfficiencyDescription">Plan smarter.
+                                        Operate better. Our predictive models help you forecast demand, optimize
+                                        resources, and reduce downtime.</p>
                                 </div>
+
                                 <br />
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Why RPDC IT Solutions? </h4>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="whyRPDCAnalytics">Why
+                                        RPDC IT Solutions?</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>End-to-end data strategy to
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="endToEndStrategyToVisualization">End-to-end data strategy to
                                                 visualization</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Expertise in modern BI tools and AI
-                                                integration</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Industry-specific analytics for
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="modernBIToolsAIIntegration">Expertise in modern BI tools and
+                                                AI integration</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="industrySpecificAnalytics">Industry-specific analytics for
                                                 deeper impact</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Scalable solutions with fast
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="scalableSolutionsFastROI">Scalable solutions with fast
                                                 ROI</span></li>
                                     </ul>
-
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Let your data drive the future.
-                                    </h4>
-                                    <p> Talk to us and unlock the power of intelligent analytics.  </p>
-                                    <a href="index.html#contact">Connect with us today. </a>
+                                    <h4 class="title-text" style="line-height: 50px;"
+                                        data-i18n="letDataDriveFutureTitle">Let your data drive the future.</h4>
+                                    <p data-i18n="unlockPowerOfAnalytics">Talk to us and unlock the power of intelligent
+                                        analytics.</p>
+                                    <a href="index.html#contact" data-i18n="connectWithUsToday">Connect with us
+                                        today.</a>
                                 </div>
 
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -210,6 +175,7 @@
         <!-- /Service Details Section -->
 
     </main>
+
 
     <footer id="footer" class="footer dark-background">
 
@@ -236,12 +202,13 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -297,6 +264,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

@@ -58,19 +58,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+          <li><a href="index.html#about" data-i18n="about">About</a></li>
+          <li><a href="index.html#services" data-i18n="services">Services</a></li>
 
           <li>
-            <a href="index.html#technologies">Technologies</a>
+            <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
           </li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
           <li>
             <div class="position-relative">
-              <select class="form-select lang-select">
-                <option value="en">English </option>
-                <!-- <option value="fr">French</option> -->
+              <select class="form-select lang-select" id="language-select" name="language">
+                <option value="English">English </option>
+                <option value="French">French</option>
               </select>
               <i class="bi bi-globe position-absolute"
                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
@@ -80,7 +80,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">Get Started</a>
+      <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
     </div>
   </header>
@@ -93,9 +93,12 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100" class="title-text">Innovate Boldly. Build Brilliantly.</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100" class="title-text" data-i18n="heroTitle">Innovate Boldly. Build
+          Brilliantly.</h2>
         <br />
-        <p data-aos="fade-up" data-aos-delay="200">At RPDC IT Solutions, our mission is to transform bold ideas into
+        <p class="text-center" data-aos="fade-up" data-aos-delay="200" data-i18n="heroDesc">At RPDC IT Solutions, our
+          mission is to
+          transform bold ideas into
           powerful
           digital solutions — bridging business goals and innovation through agility,
           creativity, and a human-first approach. We envision a world where technology
@@ -113,14 +116,16 @@
 
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="title-text">Building Future - Ready Enterprises Through Technology, Expertise, and Trust</h3>
-            <img src="assets/img/about us.jpg" class="img-fluid rounded-4 mb-4" alt=""  style="height: 380px; width: 100%;">
-            <p>Welcome to RPDC IT Solutions — your trusted partner in digital
+            <h3 class="title-text" data-i18n="aboutHeading">Building Future - Ready Enterprises Through Technology,
+              Expertise, and Trust</h3>
+            <img src="assets/img/about us.jpg" class="img-fluid rounded-4 mb-4" alt=""
+              style="height: 380px; width: 100%;">
+            <p data-i18n="aboutParagraph1">Welcome to RPDC IT Solutions — your trusted partner in digital
               transformation. With over a decade of experience and a team of 250+ skilled
               professionals, we’ve successfully delivered over 500 projects across 15+
               countries, empowering businesses to navigate and thrive in an increasingly
               digital world.</p>
-            <p>As an ISO-certified, innovation-driven company, we specialize in offering
+            <p data-i18n="aboutParagraph2">As an ISO-certified, innovation-driven company, we specialize in offering
               comprehensive, end-to-end solutions that drive growth, streamline
               operations, and enhance decision-making. From building seamless digital
               experiences and sophisticated platforms to automating processes and
@@ -130,7 +135,7 @@
             <br />
             <br />
             <div class="content ps-0 ps-lg-5">
-              <p>
+              <p data-i18n="aboutParagraph3">
                 Our expertise spans multiple industries, including healthcare, fintech, ecommerce, and real estate,
                 allowing us to create customized, scalable
                 solutions that align with your unique business needs and goals. Whether
@@ -138,7 +143,7 @@
                 efficiency, or unlock new opportunities, we have the knowledge and
                 capability to help you succeed.
               </p>
-              <p>At RPDC, we don’t just deliver technology solutions; we build long-term
+              <p data-i18n="aboutParagraph4">At RPDC, we don’t just deliver technology solutions; we build long-term
                 partnerships. Our team is committed to your success, working collaboratively
                 with you to achieve sustainable growth and lasting impact. Together, we will
                 shape the future of your business with precision, creativity, and agility. Let’s
@@ -174,8 +179,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
               <div>
-                <span>100+</span>
-                <p>Clients</p>
+                <span data-i18n="statsClientsCount">100+</span>
+                <p data-i18n="statsClientsLabel">Clients</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -184,8 +189,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-clipboard-check-fill color-orange flex-shrink-0"></i>
               <div>
-                <span>521+</span>
-                <p>Projects</p>
+                <span data-i18n="statsProjectsCount">521+</span>
+                <p data-i18n="statsProjectsLabel">Projects</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -194,8 +199,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-person-workspace color-pink flex-shrink-0"></i>
               <div>
-                <span>250+</span>
-                <p>Skilled professionals</p>
+                <span data-i18n="statsProfessionalsCount">250+</span>
+                <p data-i18n="statsProfessionalsLabel">Skilled professionals</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -204,8 +209,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-geo-alt-fill color-green flex-shrink-0"></i>
               <div>
-                <span>15+</span>
-                <p>Geographical Locations</p>
+                <span data-i18n="statsLocationsCount">15+</span>
+                <p data-i18n="statsLocationsLabel">Geographical Locations</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -223,89 +228,95 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p class="title-text">DOMAIN EXPERTISE<br></p>
+        <h2 data-i18n="servicesTitle">Services</h2>
+        <p data-i18n="servicesSubtitle" class="title-text">DOMAIN EXPERTISE<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-5">
 
-          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/healthcare.jpg" class="img-fluid" alt="" style="width: 100%; min-height: 400px; max-height: 400px;">
+                <img src="assets/img/healthcare.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-hospital-fill"></i>
                 </div>
                 <a href="healthcare-details.html" class="stretched-link">
-                  <h3>HEALTHCARE SOLUTIONS</h3>
+                  <h3 data-i18n="healthcareSolutionsTitle">HEALTHCARE SOLUTIONS</h3>
                 </a>
-                <p>At RPDC IT Solutions, we bring innovation to the healthcare ecosystem through secure, scalable,
+                <p data-i18n="healthcareSolutionsDescription">At RPDC IT Solutions, we bring innovation to the
+                  healthcare ecosystem through secure, scalable,
                   and user-centric platforms. From maternal care to virtual consultations, our HIPAA-compliant solutions
                   are transforming patient engagement, provider workflows, and public health outcomes. </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-xl-4 col-md-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/e-commerce2.jpg" class="img-fluid" alt="" style="width: 100%; min-height: 400px; max-height: 400px;">
+                <img src="assets/img/e-commerce2.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-cart-fill"></i>
                 </div>
                 <a href="ecommerce-details.html" class="stretched-link">
-                  <h3>E-COMMERCE SOLUTIONS </h3>
+                  <h3 data-i18n="ecommerceSolutionsTitle">E-COMMERCE SOLUTIONS </h3>
                 </a>
-                <p>At RPDC IT Solutions, we craft powerful e-commerce experiences that go beyond transactions. From
+                <p data-i18n="ecommerceSolutionsDescription">At RPDC IT Solutions, we craft powerful e-commerce
+                  experiences that go beyond transactions. From
                   high-end B2C platforms to robust B2B wholesale systems, our solutions are designed to boost sales,
                   personalize shopping journeys, and scale with your business. </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-4 col-md-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/enterprise2.jpg" class="img-fluid" alt="" style="width: 100%; max-height: 400px; max-height: 400px;">
+                <img src="assets/img/enterprise2.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-building"></i>
                 </div>
                 <a href="enterprise-details.html" class="stretched-link">
-                  <h3>ENTERPRISE SOLUTIONS</h3>
+                  <h3 data-i18n="enterpriseSolutionsTitle">ENTERPRISE SOLUTIONS</h3>
                 </a>
-                <p>RPDC delivers smart enterprise platforms that automate operations, improve compliance, and
+                <p data-i18n="enterpriseSolutionsDescription">RPDC delivers smart enterprise platforms that automate
+                  operations, improve compliance, and
                   accelerate digital transformation. From sustainability dashboards to manufacturing process automation,
                   our enterprise tech builds resilience and scale. </p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
-          <div class="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-4 col-md-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/fintech.webp" class="img-fluid" alt="" style="width: 100%; min-height: 400px; max-height: 400px;">
+                <img src="assets/img/fintech.webp" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
                   <i class="bi bi-credit-card-2-front-fill"></i>
                 </div>
                 <a href="fintech-details.html" class="stretched-link">
-                  <h3>FINTECH SOLUTIONS </h3>
+                  <h3 data-i18n="fintechSolutionsTitle">FINTECH SOLUTIONS </h3>
                 </a>
-                <p>From payment middleware to youth-focused digital wallets, RPDC builds innovative and reliable
+                <p data-i18n="fintechSolutionsDescription">From payment middleware to youth-focused digital wallets,
+                  RPDC builds innovative and reliable
                   fintech solutions that are secure, scalable, and user-focused—empowering businesses and users to
                   transact smarter, faster, and with confidence.  </p>
               </div>
             </div>
           </div><!-- End Service Item -->
+
+
         </div>
 
       </div>
@@ -360,32 +371,36 @@
 
     <!-- Features Section -->
     <section id="technologies" class="features section">
-
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 data-i18n="technologyHeading">Technology</h2>
+        <p data-i18n="technologySubheading" class="title-text">OUR TECHNOLOGIES</p>
+      </div><!-- End Section Title -->
       <div class="container">
 
         <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
           <li class="nav-item col-3">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
               <i class="bi bi-binoculars"></i>
-              <h4 class="d-none d-lg-block">Backend</h4>
+              <h4 data-i18n="backendTab" class="d-none d-lg-block">Backend</h4>
             </a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
               <i class="bi bi-box-seam"></i>
-              <h4 class="d-none d-lg-block">Frontend</h4>
+              <h4 data-i18n="frontendTab" class="d-none d-lg-block">Frontend</h4>
             </a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
               <i class="bi bi-brightness-high"></i>
-              <h4 class="d-none d-lg-block">Mobile</h4>
+              <h4 data-i18n="mobileTab" class="d-none d-lg-block">Mobile</h4>
             </a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
               <i class="bi bi-command"></i>
-              <h4 class="d-none d-lg-block">Other</h4>
+              <h4 data-i18n="otherTab" class="d-none d-lg-block">Other</h4>
             </a>
           </li>
         </ul><!-- End Tab Nav -->
@@ -398,20 +413,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Dot Net (C#)</h1>
+                    <h1 class="title-text" data-i18n="dotnetTitle">Dot Net (C#)</h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="dotnetOverviewText">
                     A framework by Microsoft, often used for building robust and scalable enterprise applications.
                     It's known for strong integration with Microsoft products.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="dotnetUseCases">
                     Ideal for large-scale enterprise systems, web applications, cloud-based services, and APIs. 
                   </p>
 
@@ -421,20 +436,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Node.js</h1>
+                    <h1 class="title-text" data-i18n="nodejsTitle">Node.js</h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview</h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview</h2>
                   </div>
-                  <p >
+                  <p data-i18n="nodejsOverview">
                     A JavaScript runtime built on Chrome’s V8 engine. It’s asynchronous and event-driven, making it
                     suitable for high-performance, I/O-heavy applications.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases</h2>
+                    <h2 data-i18n="useCases" class="title-text-light">Use Cases</h2>
                   </div>
-                  <p >
+                  <p data-i18n="nodejsUseCases">
                     Great for building real-time applications like chat apps, live updates, APIs, and microservices.
                   </p>
                 </div>
@@ -443,20 +458,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Java</h1>
+                    <h1 class="title-text" data-i18n="javaTitle">Java</h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="javaOverview">
                     A class-based, object-oriented language known for its portability across platforms. It’s widely
                     used in enterprise-level applications due to its reliability and scalability.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="javaUseCases">
                     Ideal for large-scale applications, banking systems, e-commerce platforms, and backend services.
                   </p>
                 </div>
@@ -465,20 +480,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">PHP</h1>
+                    <h1 class="title-text" data-i18n="phpTitle">PHP</h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview  </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="phpUseCases">
                     A widely-used scripting language for creating dynamic websites and web applications. PHP powers
                     many content management systems (CMS) and e-commerce platforms.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="phpUseCases">
                     Commonly used for building e-commerce sites (Magento), blogs and websites (WordPress), and web
                     apps (Laravel). 
                   </p>
@@ -502,20 +517,20 @@
                 <div class="section-card  p-4 m-0"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Golang (Go)</h1>
+                    <h1 class="title-text" data-i18n="golangTitle">Golang (Go)</h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview</h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview</h2>
                   </div>
-                  <p >
+                  <p data-i18n="golangOverview">
                     A JavaScript runtime built on Chrome’s V8 engine. It’s asynchronous and event-driven, making it
                     suitable for high-performance, I/O-heavy applications.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases</h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases</h2>
                   </div>
-                  <p >
+                  <p data-i18n="golangUseCases">
                     Ideal for building microservices, cloud-based applications, and real-time systems like APIs and
                     distributed services. 
                   </p>
@@ -533,20 +548,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Angular </h1>
+                    <h1 class="title-text" data-i18n="angularTitle">Angular </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="angularOverview">
                     A powerful, full-featured frontend framework developed by Google. It uses TypeScript and is ideal
                     for building large-scale, enterprise-grade applications.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="angularUseCases">
                     Best for complex apps with structured codebases like dashboards, admin panels, and enterprise
                     solutions.
                   </p>
@@ -557,20 +572,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">React.js </h1>
+                    <h1 class="title-text" data-i18n="reactJsTitle">React.js </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="reactJsOverview">
                     A JavaScript library by Meta (Facebook) for building fast, interactive user interfaces. It's
                     component-based and highly flexible.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="reactJsUseCases">
                     Great for SPAs (Single Page Applications), dynamic UIs, and projects needing reusable components
                     like social platforms or e-commerce frontends.
                   </p>
@@ -581,20 +596,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Vue.js </h1>
+                    <h1 class="title-text" data-i18n="vueJsTitle">Vue.js </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="vueJsOverview">
                     A progressive JavaScript framework that is lightweight and easy to integrate. Known for its
                     simplicity and gentle learning curve.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="vueJsUseCases">
                     Ideal for quick project setups, interactive web interfaces, and lightweight of an <br />
                     applications.
                   </p>
@@ -605,20 +620,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Next.js </h1>
+                    <h1 class="title-text" data-i18n="nextJsTitle">Next.js </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="nextJsOverview">
                     A React-based framework that supports server-side rendering and static site generation. Optimized
                     for performance and SEO.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="nextJsUseCases">
                     A React-based framework that supports server-side rendering and static site generation. Optimized
                     for performance and SEO.
                   </p>
@@ -654,20 +669,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">React Native </h1>
+                    <h1 class="title-text" data-i18n="reactNativeTitle">React Native </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="reactNativeOverview">
                     A cross-platform framework by Meta using JavaScript and React. It enables you to build Android and
                     iOS apps from a single codebase.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="reactNativeUseCases">
                     Ideal for fast, cost-effective development of apps like e-commerce, social, and utility
                     platforms. 
                   </p>
@@ -678,20 +693,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Android (Kotlin) </h1>
+                    <h1 class="title-text" data-i18n="androidKotlinTitle">Android (Kotlin) </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="androidKotlinOverview">
                     Native app development for Android using Kotlin, Google’s preferred modern language. It’s concise,
                     safe, and fully compatible with Android Studio.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="androidKotlinUseCases">
                     Best for Android-specific apps that require high performance, native UI, or hardware-level
                     features. 
                   </p>
@@ -702,20 +717,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Flutter </h1>
+                    <h1 class="title-text" data-i18n="flutterTitle">Flutter </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="flutterOverview">
                     A UI toolkit by Google for building high-performance apps for Android, iOS, and more using a
                     single Dart codebase. Known for beautiful, customizable UIs. 
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="flutterUseCases">
                     Perfect for cross-platform apps that need fast rendering, custom designs, and consistent
                     performance.
                   </p>
@@ -726,20 +741,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">iOS (Swift) </h1>
+                    <h1 class="title-text" data-i18n="iosSwiftTitle">iOS (Swift) </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="iosSwiftOverview">
                     Native app development for Apple devices using Swift, Apple’s fast and modern language. It offers
                     full control over iOS features and hardware.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="iosSwiftUseCases">
                     Ideal for iOS-exclusive apps or products that need deep Apple ecosystem integration (e.g., ARKit,
                     Siri, Apple Pay). 
                   </p>
@@ -778,20 +793,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Cloud Services </h1>
+                    <h1 class="title-text" data-i18n="cloudServices">Cloud Services </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="cloudServicesOverview">
                     Enables businesses to scale, store, and process data securely through cloud platforms like AWS,
                     Azure, and Google Cloud.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="cloudServicesUseCases">
                     Application hosting, cloud migration, serverless computing, and disaster recovery. 
                   </p>
 
@@ -801,20 +816,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Application Modernization </h1>
+                    <h1 class="title-text" data-i18n="applicationModernization">Application Modernization </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="applicationModernizationOverview">
                     Revamping legacy systems with modern technologies, architectures (like microservices), and UI/UX
                     enhancements.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="applicationModernizationUseCases">
                     Revamping legacy systems with modern technologies, architectures (like microservices), and UI/UX
                     enhancements.
                   </p>
@@ -825,20 +840,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">Full Stack Team </h1>
+                    <h1 class="title-text" data-i18n="fullStackTeam">Full Stack Team </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="fullStackTeamOverview">
                     A team skilled in both frontend and backend development, capable of building complete, end-to-end
                     web or mobile applications.
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="fullStackTeamUseCases">
                     Ideal for startups, product development, MVPs, and fast iterations. 
                   </p>
 
@@ -848,20 +863,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">AI/ML & IoT </h1>
+                    <h1 class="title-text" data-i18n="aiMlIot">AI/ML & IoT </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="aiMlIotOverview">
                     AI/ML brings intelligence to applications (e.g., predictions, automation), while IoT connects
                     physical devices for real-time data collection and control. 
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="aiMlIotUseCases">
                     AI/ML brings intelligence to applications (e.g., predictions, automation), while IoT connects
                     physical devices for real-time data collection and control. 
                   </p>
@@ -872,20 +887,20 @@
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
-                    <h1 class="title-text">DevOps </h1>
+                    <h1 class="title-text" data-i18n="devOps">DevOps </h1>
                   </div>
                   <hr />
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Overview </h2>
+                    <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p >
+                  <p data-i18n="devOpsOverview">
                     A practice combining development and IT operations to automate and streamline deployment, testing,
                     and monitoring. 
                   </p>
                   <div class="section-title-2">
-                    <h2 class="title-text-light">Use Cases </h2>
+                    <h2 class="title-text-light" data-i18n="useCases">Use Cases </h2>
                   </div>
-                  <p >
+                  <p data-i18n="devOpsUseCases">
                     CI/CD pipelines, infrastructure as code, faster release cycles, and improved system reliability. 
                   </p>
 
@@ -930,8 +945,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p class="title-text">CHECK OUR SERVICES</p>
+        <h2 data-i18n="sectionTitle">Services</h2>
+        <p class="title-text" data-i18n="sectionSubtitle">CHECK OUR SERVICES</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -942,10 +957,12 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-phone-fill  icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="enterpise-software-services.html" class="stretched-link">Enterprise Software
+                <h4 class="title"><a href="enterpise-software-services.html" class="stretched-link"
+                    data-i18n="servicesEnterpriseSoftwareDevelopmentTitle">Enterprise Software
                     Development
                   </a></h4>
-                <p class="description">Smart. Scalable. Built for the Future.
+                <p class="description" data-i18n="servicesEnterpriseSoftwareDevelopmentDescription">Smart. Scalable.
+                  Built for the Future.
                 </p>
               </div>
             </div>
@@ -955,9 +972,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-router icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="enterprise-mobility-services.html" class="stretched-link">Enterprise Mobility
+                <h4 class="title"><a href="enterprise-mobility-services.html"
+                    data-i18n="servicesEnterpriseMobilityIoTTitle" class="stretched-link">Enterprise Mobility
                     & IoT</a></h4>
-                <p class="description">Connected Experiences. Smarter Operations. Mobile-First Innovation</p>
+                <p class="description" data-i18n="servicesEnterpriseMobilityIoTDescription">Connected Experiences.
+                  Smarter Operations. Mobile-First Innovation</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -966,9 +985,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-robot icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="ai-machine-services.html" class="stretched-link">AI & Machine Learning
+                <h4 class="title"><a href="ai-machine-services.html" class="stretched-link"
+                    data-i18n="servicesAiMachineLearningTitle">AI & Machine Learning
                     Solutions</a></h4>
-                <p class="description">Smarter Systems. Sharper Insights. Stronger Outcomes.</p>
+                <p class="description" data-i18n="servicesAiMachineLearningDescription">Smarter Systems. Sharper
+                  Insights. Stronger Outcomes.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -977,9 +998,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-shield-lock-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="cybersecurity-services.html" class="stretched-link"> Cybersecurity &
+                <h4 class="title"><a data-i18n="servicesCybersecurityComplianceTitle" href="cybersecurity-services.html"
+                    class="stretched-link"> Cybersecurity &
                     Compliance</a></h4>
-                <p class="description">Secure by Design. Compliant by Default.
+                <p class="description" data-i18n="servicesCybersecurityComplianceDescription">Secure by Design.
+                  Compliant by Default.
                 </p>
               </div>
             </div>
@@ -989,9 +1012,10 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-cloud-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="cloud-services.html" class="stretched-link"> Cloud Solutions & DevOps
+                <h4 class="title"><a href="cloud-services.html" class="stretched-link"
+                    data-i18n="servicesCloudDevOpsTitle"> Cloud Solutions & DevOps
                   </a></h4>
-                <p class="description">Scalable. Secure. Built for Speed</p>
+                <p class="description" data-i18n="servicesCloudDevOpsDescription">Scalable. Secure. Built for Speed</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -1000,9 +1024,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-gear-fill icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="data-analytics-services.html" class="stretched-link">Data Analytics &
+                <h4 class="title"><a href="data-analytics-services.html" data-i18n="servicesDataAnalyticsBITitle"
+                    class="stretched-link">Data Analytics &
                     Business Intelligence</a></h4>
-                <p class="description">Turn Data Into Action. Insights Into Impact.</p>
+                <p class="description" data-i18n="servicesDataAnalyticsBIDescription">Turn Data Into Action. Insights
+                  Into Impact.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -1011,9 +1037,11 @@
             <div class="service-item d-flex position-relative h-100">
               <i class="bi bi-laptop icon flex-shrink-0"></i>
               <div>
-                <h4 class="title"><a href="digital-transformation-services.html" class="stretched-link">Digital
+                <h4 class="title"><a data-i18n="servicesDigitalTransformationTitle"
+                    href="digital-transformation-services.html" class="stretched-link">Digital
                     Transformation Service</a></h4>
-                <p class="description">Turn Data Into Action. Insights Into Impact.</p>
+                <p class="description" data-i18n="servicesDigitalTransformationDescription">Turn Data Into Action.
+                  Insights Into Impact.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -1422,8 +1450,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p class="title-text">Your next step starts here</p>
+        <h2 data-i18n="contactTitle">Contact</h2>
+        <p class="title-text" data-i18n="contactSubtitle">Your next step starts here</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -1528,12 +1556,12 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="">Privacy policy</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="legal.html">Legal</a></li>
           </ul>
         </div>
 
@@ -1588,7 +1616,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/lang.js"></script>
   <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
       const langSelect = document.querySelector('.lang-select');
@@ -1605,10 +1633,6 @@
       });
     });
   </script> -->
-  
-
-
-
 
 </body>
 

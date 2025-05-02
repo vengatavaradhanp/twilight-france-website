@@ -51,50 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-
-
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -102,105 +81,59 @@
     <main class="main">
 
         <!-- Page Title -->
-        <div class="page-title dark-background" data-aos="fade"
-            style="background-image: url(assets/img/page-title-bg.webp);">
+        <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1 class="title-text">Cloud Solutions & DevOps  </h1>
-                <p>Scalable. Secure. Built for Speed.  </p>
-                <p>At RPDC IT Solutions, we deliver cloud and DevOps services that drive agility, reduce costs, and
-                    accelerate innovation. Whether you're migrating to the cloud, optimizing deployment pipelines, or
-                    building a hybrid strategy—we’ve got you covered. </p>
-                <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
+                <h1 class="title-text" data-i18n="servicesCloudSolutionsDevOpsTitle">Cloud Solutions & DevOps</h1>
+                <p data-i18n="scalableSecureBuiltForSpeed">Scalable. Secure. Built for Speed.</p>
+                <p data-i18n="rpdcDescriptionCloudDevOps">At RPDC IT Solutions, we deliver cloud and DevOps services that drive agility, reduce costs, and accelerate innovation. Whether you're migrating to the cloud, optimizing deployment pipelines, or building a hybrid strategy—we’ve got you covered.</p>
             </div>
         </div><!-- End Page Title -->
-
+    
         <!-- Service Details Section -->
         <section id="service-details" class="service-details section">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="service-tab active" data-target="genie">GENIE MD – Virtual Healthcare Ecosystem</a>
-              <a href="#" class="service-tab" data-target="cura">CURA – Maternal Healthcare Platform</a>
-              <a href="#" class="service-tab" data-target="goperla">GoPerla 2.0 – Credential Compliance Platform</a>
-            </div>
-          </div> -->
-
+    
                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
                         <!-- GENIE MD Content -->
                         <div class="service-content" id="genie">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text " style="line-height: 50px;">Our Offerings </h4>
-                                    <p class="title-text-dark">5.1 End-to-End Cloud Migration & Management</p>
-                                    <p>
-                                        Seamlessly move to the cloud with minimal disruption. We handle everything—from
-                                        planning and migration to ongoing performance management.
-                                    </p>
-                                    <p class="title-text-dark">5.2 DevOps & CI/CD Pipelines</p>
-                                    <p>
-                                        Speed up your software releases. Our DevOps experts build CI/CD pipelines that
-                                        automate testing, integration, and deployment—boosting speed and reliability.
-                                    </p>
-                                    <p class="title-text-dark">5.3 Multi-Cloud & Hybrid Cloud Strategies</p>
-                                    <p>
-                                        Maximize flexibility and avoid vendor lock-in. We design custom cloud
-                                        architectures across AWS, Azure, GCP, and on-prem systems to fit your business
-                                        goals.
-                                    </p>
-                                    <p class="title-text-dark">5.4 Cloud Security, Compliance & Disaster Recovery</p>
-                                    <p>
-                                        Stay secure, stay compliant. We implement best-in-class security frameworks and
-                                        robust recovery plans to protect your data and ensure business continuity.
-                                    </p>
-
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="ourOfferingsTitle">Our Offerings</h4>
+                                    <p class="title-text-dark" data-i18n="endToEndCloudMigrationManagementTitle">5.1 End-to-End Cloud Migration & Management</p>
+                                    <p data-i18n="endToEndCloudMigrationManagementDescription">Seamlessly move to the cloud with minimal disruption. We handle everything—from planning and migration to ongoing performance management.</p>
+                                    <p class="title-text-dark" data-i18n="devOpsCICDPipelinesTitle">5.2 DevOps & CI/CD Pipelines</p>
+                                    <p data-i18n="devOpsCICDPipelinesDescription">Speed up your software releases. Our DevOps experts build CI/CD pipelines that automate testing, integration, and deployment—boosting speed and reliability.</p>
+                                    <p class="title-text-dark" data-i18n="multiCloudHybridCloudStrategiesTitle">5.3 Multi-Cloud & Hybrid Cloud Strategies</p>
+                                    <p data-i18n="multiCloudHybridCloudStrategiesDescription">Maximize flexibility and avoid vendor lock-in. We design custom cloud architectures across AWS, Azure, GCP, and on-prem systems to fit your business goals.</p>
+                                    <p class="title-text-dark" data-i18n="cloudSecurityComplianceDisasterRecoveryTitle">5.4 Cloud Security, Compliance & Disaster Recovery</p>
+                                    <p data-i18n="cloudSecurityComplianceDisasterRecoveryDescription">Stay secure, stay compliant. We implement best-in-class security frameworks and robust recovery plans to protect your data and ensure business continuity.</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Why RPDC? </h4>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="whyRPDC">Why RPDC?</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Cloud-native and DevOps-first
-                                                approach</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Certified experts across major
-                                                cloud platforms</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Proven results in reducing
-                                                deployment time and infrastructure costs</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Focus on security, scalability, and
-                                                performance</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="cloudNativeDevOpsApproach">Cloud-native and DevOps-first approach</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="certifiedExpertsAcrossCloudPlatforms">Certified experts across major cloud platforms</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="provenResultsInReducingDeploymentTime">Proven results in reducing deployment time and infrastructure costs</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="focusOnSecurityScalabilityPerformance">Focus on security, scalability, and performance</span></li>
                                     </ul>
-
                                 </div>
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Ready to transform your
-                                        infrastructure? </h4>
-                                    <p> Let’s build your cloud journey—faster, safer, smarter.  </p>
-                                    <a href="index.html#contact">Connect with us today. </a>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="readyToTransformInfrastructure">Ready to transform your infrastructure?</h4>
+                                    <p data-i18n="letsBuildYourCloudJourney">Let’s build your cloud journey—faster, safer, smarter.</p>
+                                    <a href="index.html#contact" data-i18n="connectWithUsToday">Connect with us today.</a>
                                 </div>
-
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
         </section>
         <!-- /Service Details Section -->
-
+    
     </main>
+    
 
     <footer id="footer" class="footer dark-background">
 
@@ -227,12 +160,12 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -288,6 +221,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

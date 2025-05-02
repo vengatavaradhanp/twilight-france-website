@@ -51,48 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -103,9 +84,9 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1>Ecommerce Domain</h1>
+                <h1 data-i18n="ecommerceTitle">Ecommerce Domain</h1>
                 <br />
-                <p>At RPDC IT Solutions, we craft powerful e-commerce experiences that go beyond transactions. From
+                <p data-i18n="ecommerceOverview">At RPDC IT Solutions, we craft powerful e-commerce experiences that go beyond transactions. From
                     high-end B2C platforms to robust B2B wholesale systems, our solutions are designed to boost sales,
                     personalize shopping journeys, and scale with your business.</p>
                 <!-- <nav class="breadcrumbs">
@@ -123,11 +104,15 @@
                 <div class="row gy-4">
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="services-list">
-                            <a href="#" class="service-tab active" data-target="ajaffe">A.JAFFE – Luxury Jewelry Online
+                            <a href="#" class="service-tab active" data-target="ajaffe" data-i18n="ajaffe">A.JAFFE –
+                                Luxury Jewelry Online
                                 Store </a>
-                            <a href="#" class="service-tab" data-target="sahinler">Sahinler France – B2B/B2C Textile
+                            <a href="#" class="service-tab" data-target="sahinler" data-i18n="sahinler">Sahinler France
+                                –
+                                B2B/B2C Textile
                                 Commerce </a>
-                            <a href="#" class="service-tab" data-target="fmcg">Time Wholesale Services – FMCG
+                            <a href="#" class="service-tab" data-target="fmcg" data-i18n="fmcg">Time Wholesale Services
+                                – FMCG
                                 Platform</a>
                         </div>
                     </div>
@@ -136,182 +121,226 @@
                         <!-- GENIE MD Content -->
                         <div class="service-content" id="ajaffe">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
 
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="ajaffeClientChallengeDesc">
                                         A.JAFFE, a prestigious New York-based jewelry brand, needed a visually striking
                                         e-commerce platform to enable customization of bridal jewelry while preserving
                                         the luxury shopping experience.
                                     </p>
-
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="ajaffeRpdcSolutionDesc">
                                         We developed a Magento-based e-commerce site that offered real-time
                                         customization of engagement rings, a mobile-friendly interface, and backend
                                         order automation.
                                     </p>
-
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text">Features Delivered </h4>
+                                    <h4 class="title-text" data-i18n="featuresDelivered">Features Delivered</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Interactive product customization
-                                                tools</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Mobile-optimized storefront</span>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureProductCustomization">
+                                                Interactive product customization tools
+                                            </span>
                                         </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Social sharing integrations</span>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureMobileOptimized">
+                                                Mobile-optimized storefront
+                                            </span>
                                         </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Magento + Laravel-based content and
-                                                order management</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Secure checkout with multiple
-                                                payment options</span></li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureSocialSharing">
+                                                Social sharing integrations
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureMagentoLaravel">
+                                                Magento + Laravel-based content and order management
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureSecureCheckout">
+                                                Secure checkout with multiple payment options
+                                            </span>
+                                        </li>
                                     </ul>
-
                                 </div>
+
                                 <div>
-                                    <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
-
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>2x increase in customer
-                                                retention</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Enhanced digital brand
-                                                perception</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Streamlined ordering and
-                                                fulfillment</span></li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactCustomerRetention">
+                                                2x increase in customer retention
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactBrandPerception">
+                                                Enhanced digital brand perception
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactOrderFulfillment">
+                                                Streamlined ordering and fulfillment
+                                            </span>
+                                        </li>
                                     </ul>
-
                                 </div>
+
                             </div>
-
                         </div>
+
+
 
                         <!-- CURA Content -->
                         <div class="service-content d-none" id="sahinler">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
 
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="sahinlerClientChallengeDesc">
                                         Sahinler France sought to expand its offline-only textile business into digital
                                         retail and B2B commerce across Europe, with drop-shipping integrations.
                                     </p>
-
                                 </div>
+
                                 <div>
-                                    <h4>RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 data-i18n="rpdcSolution" class="title-text">RPDC’s Solution</h4>
+                                    <p data-i18n="sahinlerRpdcSolutionDesc">
                                         Sahinler France sought to expand its offline-only textile business into digital
                                         retail and B2B commerce across Europe, with drop-shipping integrations
                                     </p>
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text">Features Delivered</h4>
+                                    <h4 class="title-text" data-i18n="featuresDelivered">Features Delivered</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Marketplace integration (Amazon,
-                                                Kiabi, Showroomprive)</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Real-time inventory and
-                                                drop-shipping</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Unified dashboard for B2B &
-                                                B2C</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Enterprise-grade cloud
-                                                scalability</span></li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureMarketplaceIntegration">
+                                                Marketplace integration (Amazon, Kiabi, Showroomprive)
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureInventoryAndDropshipping">
+                                                Real-time inventory and drop-shipping
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureUnifiedDashboard">
+                                                Unified dashboard for B2B & B2C
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureCloudScalability">
+                                                Enterprise-grade cloud scalability
+                                            </span>
+                                        </li>
                                     </ul>
-
-
                                 </div>
+
                                 <div>
-                                    <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
-
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Tripled online order volume in
-                                                Q1</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Expanded market reach across
-                                                Europe</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Improved fulfillment
-                                                logistics</span></li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactOrderVolume">
+                                                Tripled online order volume in Q1
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactMarketReach">
+                                                Expanded market reach across Europe
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactFulfillmentLogistics">
+                                                Improved fulfillment logistics
+                                            </span>
+                                        </li>
                                     </ul>
-
-
                                 </div>
+
                             </div>
                         </div>
+
+
 
                         <!-- GoPerla Content -->
                         <div class="service-content d-none" id="fmcg">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
 
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="fmcgClientChallengeDesc">
                                         RPDC, a leading FMCG distributor in the UK, faced challenges with disconnected
                                         systems for bulk and retail sales, causing data silos and operational
                                         inefficiencies.
                                     </p>
-
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="fmcgRpdcSolutionDesc">
                                         We built a unified Adobe Commerce Cloud platform tailored for B2B wholesale that
                                         included powerful admin controls, payment gateway integrations, and real-time
-                                        stock visibility. 
+                                        stock visibility.
                                     </p>
                                 </div>
+
                                 <div>
-                                    <h4 class="title-text">Key Features</h4>
+                                    <h4 class="title-text" data-i18n="keyFeatures">Key Features</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Unified B2B and B2C on one
-                                                platform</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Admin control panel for pricing,
-                                                inventory, and bulk orders</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Opayo SagePay integration</span>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureUnifiedPlatform">
+                                                Unified B2B and B2C on one platform
+                                            </span>
                                         </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Custom UI for improved wholesale
-                                                experience</span></li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureAdminControlPanel">
+                                                Admin control panel for pricing, inventory, and bulk orders
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureOpayoIntegration">
+                                                Opayo SagePay integration
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="featureCustomUI">
+                                                Custom UI for improved wholesale experience
+                                            </span>
+                                        </li>
                                     </ul>
-
-
                                 </div>
+
                                 <div>
-                                    <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
-
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>50% reduction in order-processing
-                                                time</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Improved user experience for
-                                                retailers</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Centralized product and customer
-                                                management</span></li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactOrderProcessingTime">
+                                                50% reduction in order-processing time
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactUserExperience">
+                                                Improved user experience for retailers
+                                            </span>
+                                        </li>
+                                        <li><i class="bi bi-check-circle"></i>
+                                            <span data-i18n="impactCentralizedManagement">
+                                                Centralized product and customer management
+                                            </span>
+                                        </li>
                                     </ul>
-
-
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -345,12 +374,13 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -406,6 +436,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

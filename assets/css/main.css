@@ -605,6 +605,8 @@ h6 {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   margin-right: 10px;
   transition: 0.3s;
+  filter: grayscale(100);
+  pointer-events: none;
 }
 
 .footer .social-links a:hover {
@@ -867,7 +869,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -1148,6 +1150,8 @@ section,
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
+  min-height: 300px;
 }
 
 .services .details .icon {
@@ -1181,6 +1185,23 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+}
+
+.services .service-item img {
+  height: 250px;
+  width: 100%;
+}
+
+.services .service-item img .img-fluid {
+  width: 100%;
+  height: 100%;
+}
+
+.services .service-item .details {
+  height: auto;
+  /* min-height: 350px; */
+  /* overflow: hidden; */
+
 }
 
 .services .service-item:hover .details h3 {
@@ -1219,7 +1240,7 @@ section,
   max-width: 90%;
   transition: 0.3s;
   opacity: 0.7;
-  /* filter: grayscale(100); */
+  filter: grayscale(100);
 }
 
 .clients .client-logo img:hover {
@@ -1924,4 +1945,8 @@ section,
 .title-text-dark {
   color: #000;
   font-weight: 600;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }

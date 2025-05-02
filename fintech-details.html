@@ -51,48 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -103,16 +84,17 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1>Fintech Domain</h1>
+                <h1 data-i18n="fintechDomain">Fintech Domain</h1>
                 <br />
-                <p>From payment middleware to youth-focused digital wallets, RPDC builds fintech solutions that are
+                <p data-i18n="fintechDescription">From payment middleware to youth-focused digital wallets, RPDC builds
+                    fintech solutions that are
                     secure, scalable, and user-focused—empowering businesses and users to transact smarter. </p>
                 <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li class="current">Service Details</li>
+              </ol>
+            </nav> -->
             </div>
         </div><!-- End Page Title -->
 
@@ -122,9 +104,11 @@
                 <div class="row gy-4">
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="services-list">
-                            <a href="#" class="service-tab active" data-target="sodexo">Alpha Fintech – Omni-Payment
-                                Middleware   </a>
-                            <a href="#" class="service-tab" data-target="broadcom">FYP – Teen Financial Literacy
+                            <a href="#" class="service-tab active" data-target="sodexo"
+                                data-i18n="alphaFintechTitle">Alpha Fintech – Omni-Payment
+                                Middleware</a>
+                            <a href="#" class="service-tab" data-target="broadcom" data-i18n="fypTitle">FYP – Teen
+                                Financial Literacy
                                 Platform</a>
                             <!-- <a href="#" class="service-tab" data-target="lenovo">Lenovo – Smart Factory Tools </a> -->
                         </div>
@@ -135,53 +119,59 @@
                         <div class="service-content" id="sodexo">
                             <div>
                                 <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
+    
+                    <div class="col-lg-8">
+                      <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                    </div>
+                  </div> -->
 
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="alphaFintechChallenge">
                                         Alpha Fintech needed a centralized platform to streamline vendor and payment
-                                        processor integration for merchants and banks. 
+                                        processor integration for merchants and banks.
                                     </p>
 
                                 </div>
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="alphaFintechSolution">
                                         Alpha Fintech needed a centralized platform to streamline vendor and payment
-                                        processor integration for merchants and banks. 
+                                        processor integration for merchants and banks.
                                     </p>
 
                                 </div>
                                 <div>
-                                    <h4 class="title-text">Features Delivered </h4>
+                                    <h4 class="title-text" data-i18n="featuresDelivered">Features Delivered</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Unified payment interface for all
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="unifiedPaymentInterface">Unified payment interface for all
                                                 stakeholders</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Multi-gateway processor
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="multiGatewaySupport">Multi-gateway processor
                                                 support</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Real-time transaction
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="realTimeRouting">Real-time transaction
                                                 routing</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Secure .NET-based backend and
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="secureBackend">Secure
+                                                .NET-based backend and
                                                 MongoDB storage</span></li>
                                     </ul>
-
 
                                 </div>
                                 <div>
                                     <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
 
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Simplified vendor onboarding</span>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="simplifiedOnboarding">Simplified vendor onboarding</span>
                                         </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Increased transaction
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="increasedReliability">Increased transaction
                                                 reliability</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Reduced dependency on single
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="reducedDependency">Reduced dependency on single
                                                 payment gateways</span></li>
                                     </ul>
 
@@ -194,60 +184,64 @@
                         <div class="service-content d-none" id="broadcom">
                             <div>
                                 <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
+    
+                    <div class="col-lg-8">
+                      <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                    </div>
+                  </div> -->
 
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="fypChallenge">
                                         FYP needed an engaging mobile solution to teach financial literacy to teenagers
-                                        while giving parents control over spending and investments. 
+                                        while giving parents control over spending and investments.
                                     </p>
 
                                 </div>
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="fypSolution">
                                         We delivered a dual-platform mobile app with features like teen wallets,
                                         parental controls, stock investing, and UPI-based transactions, all built with a
                                         modern UX.
                                     </p>
                                 </div>
                                 <div>
-                                    <h4 class="title-text">Features Delivered</h4>
+                                    <h4 class="title-text" data-i18n="featuresDelivered">Features Delivered</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Scheduled pocket money
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="scheduledTransfers">Scheduled pocket money
                                                 transfers</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>UPI & Visa-powered wallet</span>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="upiVisaWallet">UPI &
+                                                Visa-powered wallet</span>
                                         </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Stock investment simulation for
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="stockSimulation">Stock
+                                                investment simulation for
                                                 teens</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>SwiftUI & Jetpack Compose-based
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="swiftUIJetpack">SwiftUI
+                                                & Jetpack Compose-based
                                                 apps</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Real-time financial tracking and
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="realTimeTracking">Real-time financial tracking and
                                                 parental access</span></li>
                                     </ul>
-
-
 
                                 </div>
                                 <div>
                                     <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
 
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Promoted financial independence
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="financialIndependence">Promoted financial independence
                                                 among youth</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Strengthened trust between parents
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="strengthenedTrust">Strengthened trust between parents
                                                 and teens</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Simplified family financial
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="simplifiedPlanning">Simplified family financial
                                                 planning</span></li>
                                     </ul>
-
-
 
                                 </div>
                             </div>
@@ -257,55 +251,60 @@
                         <div class="service-content d-none" id="lenovo">
                             <div>
                                 <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
+    
+                    <div class="col-lg-8">
+                      <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+                    </div>
+                  </div> -->
 
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallengeTitle">Client Challenge</h4>
+                                    <p data-i18n="lenovoChallenge">
                                         Lenovo’s manufacturing division struggled with manual audit trails,
                                         attendance logging, and SOP management, leading to delays and compliance gaps.
                                     </p>
 
                                 </div>
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolutionTitle">RPDC’s Solution</h4>
+                                    <p data-i18n="lenovoSolution">
                                         We built a comprehensive enterprise web system that digitized Lenovo’s audit
                                         logs, employee attendance, and security protocols with real-time monitoring.
                                     </p>
                                 </div>
                                 <div>
-                                    <h4 class="title-text">Key Features</h4>
+                                    <h4 class="title-text" data-i18n="keyFeaturesTitle">Key Features</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>ISO audit log automation</span>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="auditAutomation">ISO
+                                                audit log automation</span>
                                         </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Smart biometric attendance
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="biometricAttendance">Smart biometric attendance
                                                 system</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>SOP and digital instruction
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sopPortal">SOP and
+                                                digital instruction
                                                 portal</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Real-time incident response
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="incidentTracking">Real-time incident response
                                                 tracking</span></li>
                                     </ul>
-
 
                                 </div>
                                 <div>
                                     <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
+                                    <h4 class="title-text" data-i18n="businessImpactTitle">Business Impact</h4>
 
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>50% drop in compliance
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="complianceDrop">50% drop
+                                                in compliance
                                                 errors</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Improved employee
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="improvedAccountability">Improved employee
                                                 accountability</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Faster operational response</span>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="fasterResponse">Faster
+                                                operational response</span>
                                         </li>
                                     </ul>
-
 
                                 </div>
                             </div>
@@ -317,6 +316,7 @@
         <!-- /Service Details Section -->
 
     </main>
+
 
     <footer id="footer" class="footer dark-background">
 
@@ -343,12 +343,13 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -404,6 +405,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

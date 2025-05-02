@@ -51,47 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                  <li><a href="index.html" class="active">Home</a></li>
-                  <li><a href="index.html#about">About</a></li>
-                  <li><a href="index.html#services">Services</a></li>
-                  <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                  <li><a href="index.html#contact">Contact</a></li>
-                      <!-- Language Selector -->
-                      <li>
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
+                    <li>
                         <div class="position-relative">
-                          <select class="form-select lang-select">
-                            <option value="en">English</option>
-                            <option value="fr">French</option>
-                          </select>
-                          <i class="bi bi-globe position-absolute"
-                            style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
+                            </select>
+                            <i class="bi bi-globe position-absolute"
+                                style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
-                      </li>
-               
-                    
+                    </li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-              </nav>
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            </nav>
+
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -102,17 +84,11 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1 class="title-text">Cybersecurity & Compliance  </h1>
-                <p>Secure by Design. Compliant by Default. </p>
-                <p>At RPDC IT Solutions, we protect what matters most—your data, systems, and reputation. Our
-                    end-to-end cybersecurity services and compliance solutions help you stay secure, resilient, and
-                    audit-ready in an ever-evolving threat landscape. </p>
-                <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
+                <h1 class="title-text" data-i18n="servicesCybersecurityComplianceTitle">Cybersecurity & Compliance</h1>
+                <p data-i18n="secureByDesignCompliantByDefault">Secure by Design. Compliant by Default.</p>
+                <p data-i18n="rpdcDescriptionCybersecurity">At RPDC IT Solutions, we protect what matters most—your
+                    data, systems, and reputation. Our end-to-end cybersecurity services and compliance solutions help
+                    you stay secure, resilient, and audit-ready in an ever-evolving threat landscape.</p>
             </div>
         </div><!-- End Page Title -->
 
@@ -120,76 +96,71 @@
         <section id="service-details" class="service-details section">
             <div class="container">
                 <div class="row gy-4">
-                    <!-- <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="service-tab active" data-target="genie">GENIE MD – Virtual Healthcare Ecosystem</a>
-              <a href="#" class="service-tab" data-target="cura">CURA – Maternal Healthcare Platform</a>
-              <a href="#" class="service-tab" data-target="goperla">GoPerla 2.0 – Credential Compliance Platform</a>
-            </div>
-          </div> -->
 
                     <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
                         <!-- GENIE MD Content -->
                         <div class="service-content" id="genie">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text " style="line-height: 50px;">What We Deliver </h4>
-                                    <p class="title-text-dark">4.1 Comprehensive Security Risk & Threat Assessment</p>
-                                    <p>
-                                        Identify vulnerabilities before attackers do. We evaluate your security posture
-                                        and provide actionable insights to close the gaps.
-                                    </p>
-                                    <p class="title-text-dark">4.2 Advanced Cloud & Network Security Architecture</p>
-                                    <p>
-                                        Build a rock-solid foundation. We design and implement secure, scalable
-                                        architectures to safeguard your cloud and on-prem environments.
-                                    </p>
-                                    <p class="title-text-dark">4.3 Identity & Access Management (IAM)</p>
-                                    <p>
-                                        Control access. Protect data. We implement robust IAM frameworks to ensure only
-                                        the right users have access to the right systems—at the right time.
-                                    </p>
-                                    <p class="title-text-dark">4.4 Regulatory Compliance Solutions</p>
-                                    <p>
-                                        Stay compliant with ease. From GDPR and HIPAA to ISO 27001, we help you navigate
-                                        regulations and implement controls with confidence.
-                                    </p>
-                                    <p class="title-text-dark">4.5 Threat Intelligence & Real-Time Incident Response
-                                    </p>
-                                    <p>
-                                        Detect fast. Respond faster. We deliver real-time threat monitoring, alerts, and
-                                        incident response to keep your business a step ahead of cyber threats.
-                                    </p>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="whatWeDeliverTitle">
+                                        What We Deliver</h4>
+                                    <p class="title-text-dark"
+                                        data-i18n="comprehensiveSecurityRiskThreatAssessmentTitle">4.1 Comprehensive
+                                        Security Risk & Threat Assessment</p>
+                                    <p data-i18n="comprehensiveSecurityRiskThreatAssessmentDescription">Identify
+                                        vulnerabilities before attackers do. We evaluate your security posture and
+                                        provide actionable insights to close the gaps.</p>
+                                    <p class="title-text-dark"
+                                        data-i18n="advancedCloudNetworkSecurityArchitectureTitle">4.2 Advanced Cloud &
+                                        Network Security Architecture</p>
+                                    <p data-i18n="advancedCloudNetworkSecurityArchitectureDescription">Build a
+                                        rock-solid foundation. We design and implement secure, scalable architectures to
+                                        safeguard your cloud and on-prem environments.</p>
+                                    <p class="title-text-dark" data-i18n="identityAccessManagementTitle">4.3 Identity &
+                                        Access Management (IAM)</p>
+                                    <p data-i18n="identityAccessManagementDescription">Control access. Protect data. We
+                                        implement robust IAM frameworks to ensure only the right users have access to
+                                        the right systems—at the right time.</p>
+                                    <p class="title-text-dark" data-i18n="regulatoryComplianceSolutionsTitle">4.4
+                                        Regulatory Compliance Solutions</p>
+                                    <p data-i18n="regulatoryComplianceSolutionsDescription">Stay compliant with ease.
+                                        From GDPR and HIPAA to ISO 27001, we help you navigate regulations and implement
+                                        controls with confidence.</p>
+                                    <p class="title-text-dark"
+                                        data-i18n="threatIntelligenceRealTimeIncidentResponseTitle">4.5 Threat
+                                        Intelligence & Real-Time Incident Response</p>
+                                    <p data-i18n="threatIntelligenceRealTimeIncidentResponseDescription">Detect fast.
+                                        Respond faster. We deliver real-time threat monitoring, alerts, and incident
+                                        response to keep your business a step ahead of cyber threats.</p>
                                 </div>
                                 <br />
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Why RPDC?   </h4>
+                                    <h4 class="title-text" style="line-height: 50px;" data-i18n="whyRPDCTitle">Why RPDC?
+                                    </h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Security-first approach with global compliance expertise</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Proactive defense with 24/7 monitoring capabilities</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Tailored solutions for enterprises across industries</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Trusted partner for audit-readiness and risk mitigation</span></li>
-                                      </ul>
-                                      
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="securityFirstApproachWithGlobalComplianceExpertise">Security-first
+                                                approach with global compliance expertise</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="proactiveDefenseWith24x7MonitoringCapabilities">Proactive
+                                                defense with 24/7 monitoring capabilities</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="tailoredSolutionsForEnterprisesAcrossIndustries">Tailored
+                                                solutions for enterprises across industries</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span
+                                                data-i18n="trustedPartnerForAuditReadinessRiskMitigation">Trusted
+                                                partner for audit-readiness and risk mitigation</span></li>
+                                    </ul>
                                 </div>
                                 <div>
-                                    <h4 class="title-text" style="line-height: 50px;">Cyber threats evolve. So do we.  </h4>
-                                    <p>Let’s secure your business—end-to-end.  </p>
-                                    <a href="index.html#contact">Connect with us today.  </a>
+                                    <h4 class="title-text" style="line-height: 50px;"
+                                        data-i18n="cyberThreatsEvolveTitle">Cyber threats evolve. So do we.</h4>
+                                    <p data-i18n="letsSecureYourBusiness">Let’s secure your business—end-to-end.</p>
+                                    <a href="index.html#contact" data-i18n="connectWithUsToday">Connect with us
+                                        today.</a>
                                 </div>
-
                             </div>
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -223,12 +194,13 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a
+                                href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -284,6 +256,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {

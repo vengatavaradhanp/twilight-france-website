@@ -51,48 +51,29 @@
 
             <nav id="navmenu" class="navmenu">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <!-- <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#team">Team</a></li>
-                  <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                    <ul>
-                      <li><a href="#">Dropdown 1</a></li>
-                      <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                            class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                          <li><a href="#">Deep Dropdown 1</a></li>
-                          <li><a href="#">Deep Dropdown 2</a></li>
-                          <li><a href="#">Deep Dropdown 3</a></li>
-                          <li><a href="#">Deep Dropdown 4</a></li>
-                          <li><a href="#">Deep Dropdown 5</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Dropdown 2</a></li>
-                      <li><a href="#">Dropdown 3</a></li>
-                      <li><a href="#">Dropdown 4</a></li>
-                    </ul>
-                  </li> -->
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <!-- Language Selector -->
+                    <li><a href="index.html" class="active" data-i18n="home">Home</a></li>
+                    <li><a href="index.html#about" data-i18n="about">About</a></li>
+                    <li><a href="index.html#services" data-i18n="services">Services</a></li>
+
+                    <li>
+                        <a href="index.html#technologies" data-i18n="technologies">Technologies</a>
+                    </li>
+                    <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
                     <li>
                         <div class="position-relative">
-                            <select class="form-select lang-select">
-                                <option value="en">English</option>
-                                <option value="fr">French</option>
+                            <select class="form-select lang-select" id="language-select" name="language">
+                                <option value="English">English </option>
+                                <option value="French">French</option>
                             </select>
                             <i class="bi bi-globe position-absolute"
                                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
                         </div>
                     </li>
-
-
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="cta-btn" href="index.html#about">Get Started</a>
+            <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
 
         </div>
     </header>
@@ -103,203 +84,133 @@
         <div class="page-title dark-background" data-aos="fade"
             style="background-image: url(assets/img/page-title-bg.webp);">
             <div class="container position-relative">
-                <h1>Enterprise Domain</h1>
+                <h1 data-i18n="enterpriseDomain">Enterprise Domain</h1>
                 <br />
-                <p>RPDC delivers smart enterprise platforms that automate operations, improve compliance, and
+                <p data-i18n="enterpriseDomainDesc">RPDC delivers smart enterprise platforms that automate operations, improve compliance, and
                     accelerate digital transformation. From sustainability dashboards to manufacturing process
                     automation, our enterprise tech builds resilience and scale. </p>
-                <!-- <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
-          </ol>
-        </nav> -->
             </div>
         </div><!-- End Page Title -->
-
+    
         <!-- Service Details Section -->
         <section id="service-details" class="service-details section">
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="services-list">
-                            <a href="#" class="service-tab active" data-target="sodexo">Sodexo – Global Sustainability
-                                Intelligence </a>
-                            <a href="#" class="service-tab" data-target="broadcom">Broadcom – Agile Digital Enterprise
-                                Hub </a>
-                            <a href="#" class="service-tab" data-target="lenovo">Lenovo – Smart Factory Tools </a>
+                            <a href="#" class="service-tab active" data-target="sodexo" data-i18n="sodexoTitle">Sodexo – Global Sustainability Intelligence</a>
+                            <a href="#" class="service-tab" data-target="broadcom" data-i18n="broadcomTitle">Broadcom – Agile Digital Enterprise Hub</a>
+                            <a href="#" class="service-tab" data-target="lenovo" data-i18n="lenovoTitle">Lenovo – Smart Factory Tools</a>
                         </div>
                     </div>
-
+    
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
                         <!-- GENIE MD Content -->
                         <div class="service-content" id="sodexo">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="sodexoClientChallengeDesc">
                                         With operations in over 30,000 global sites, Sodexo lacked a unified system to
                                         monitor sustainability metrics and environmental compliance in real time.
                                     </p>
-
                                 </div>
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
-                                        With operations in over 30,000 global sites, Sodexo lacked a unified system to
-                                        monitor sustainability metrics and environmental compliance in real time.
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="sodexoSolutionDesc">
+                                        We provided a unified solution to track and report sustainability metrics for Sodexo's global operations in real time.
                                     </p>
-
                                 </div>
                                 <div>
-                                    <h4 class="title-text">Features Delivered </h4>
+                                    <h4 class="title-text" data-i18n="featuresDelivered">Features Delivered</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Real-time environmental performance
-                                                dashboards</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Emission tracking for energy,
-                                                waste, food, and transport</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Azure-hosted centralized data
-                                                storage</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Role-based reporting for site
-                                                managers</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoFeature1">Real-time environmental performance dashboards</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoFeature2">Emission tracking for energy, waste, food, and transport</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoFeature3">Azure-hosted centralized data storage</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoFeature4">Role-based reporting for site managers</span></li>
                                     </ul>
-
                                 </div>
                                 <div>
-                                    <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
-
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>80% reduction in reporting
-                                                time</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Stronger ESG compliance</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Data-driven sustainability
-                                                decision-making</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoImpact1">80% reduction in reporting time</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoImpact2">Stronger ESG compliance</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="sodexoImpact3">Data-driven sustainability decision-making</span></li>
                                     </ul>
-
                                 </div>
                             </div>
-
                         </div>
-
+    
                         <!-- CURA Content -->
                         <div class="service-content d-none" id="broadcom">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
-                                        Broadcom needed to modernize internal enterprise apps with a unified design
-                                        system and fast deployment architecture for cross-functional teams.
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="broadcomClientChallengeDesc">
+                                        Broadcom needed to modernize internal enterprise apps with a unified design system
+                                        and fast deployment architecture for cross-functional teams.
                                     </p>
-
                                 </div>
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="broadcomSolutionDesc">
                                         We collaborated with Broadcom to deliver modular, microservice-based web apps
                                         with React, Angular, and GraphQL, improving speed and UI consistency.
                                     </p>
                                 </div>
                                 <div>
-                                    <h4 class="title-text">Features Delivered</h4>
+                                    <h4 class="title-text" data-i18n="featuresDelivered">Features Delivered</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Modular frontends using React &
-                                                Angular</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Optimized backend APIs via Node.js
-                                                and GraphQL</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Design system built in Figma for
-                                                consistency</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Scalable architecture for future
-                                                expansion</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomFeature1">Modular frontends using React & Angular</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomFeature2">Optimized backend APIs via Node.js and GraphQL</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomFeature3">Design system built in Figma for consistency</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomFeature4">Scalable architecture for future expansion</span></li>
                                     </ul>
-
-
                                 </div>
                                 <div>
-                                    <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
-
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>Faster feature rollout</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Enhanced employee
-                                                collaboration</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Improved application design
-                                                consistency</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomImpact1">Faster feature rollout</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomImpact2">Enhanced employee collaboration</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="broadcomImpact3">Improved application design consistency</span></li>
                                     </ul>
-
-
                                 </div>
                             </div>
                         </div>
-
+    
                         <!-- GoPerla Content -->
                         <div class="service-content d-none" id="lenovo">
                             <div>
-                                <!-- <div class="row gy-4">
-
-                <div class="col-lg-8">
-                  <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-                </div>
-              </div> -->
-
                                 <div>
-                                    <h4 class="title-text">Client Challenge</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="clientChallenge">Client Challenge</h4>
+                                    <p data-i18n="lenovoClientChallengeDesc">
                                         Lenovo’s manufacturing division struggled with manual audit trails,
                                         attendance logging, and SOP management, leading to delays and compliance gaps.
                                     </p>
-
                                 </div>
                                 <div>
-                                    <h4 class="title-text">RPDC’s Solution</h4>
-                                    <p>
+                                    <h4 class="title-text" data-i18n="rpdcSolution">RPDC’s Solution</h4>
+                                    <p data-i18n="lenovoSolutionDesc">
                                         We built a comprehensive enterprise web system that digitized Lenovo’s audit
                                         logs, employee attendance, and security protocols with real-time monitoring.
                                     </p>
                                 </div>
                                 <div>
-                                    <h4 class="title-text">Key Features</h4>
+                                    <h4 class="title-text" data-i18n="keyFeatures">Key Features</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>ISO audit log automation</span>
-                                        </li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Smart biometric attendance
-                                                system</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>SOP and digital instruction
-                                                portal</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Real-time incident response
-                                                tracking</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoFeature1">ISO audit log automation</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoFeature2">Smart biometric attendance system</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoFeature3">SOP and digital instruction portal</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoFeature4">Real-time incident response tracking</span></li>
                                     </ul>
-
-
                                 </div>
                                 <div>
-                                    <!-- <img src="assets/img/services.jpg" alt="" class="img-fluid services-img"> -->
-                                    <h4 class="title-text">Business Impact</h4>
-
+                                    <h4 class="title-text" data-i18n="businessImpact">Business Impact</h4>
                                     <ul>
-                                        <li><i class="bi bi-check-circle"></i> <span>50% drop in compliance
-                                                errors</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Improved employee
-                                                accountability</span></li>
-                                        <li><i class="bi bi-check-circle"></i> <span>Faster operational response</span>
-                                        </li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoImpact1">50% drop in compliance errors</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoImpact2">Improved employee accountability</span></li>
+                                        <li><i class="bi bi-check-circle"></i> <span data-i18n="lenovoImpact3">Faster operational response</span></li>
                                     </ul>
-
-
                                 </div>
                             </div>
                         </div>
@@ -308,8 +219,9 @@
             </div>
         </section>
         <!-- /Service Details Section -->
-
+    
     </main>
+    
 
     <footer id="footer" class="footer dark-background">
 
@@ -336,12 +248,12 @@
                 <div class="col-lg-2 col-md-3 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="https://www.tripzoomer.fr/footer/legal">Legal</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html">Terms of service</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html">Privacy policy</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="legal.html">Legal</a></li>
                     </ul>
                 </div>
 
@@ -397,6 +309,7 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/lang.js"></script>
 
     <script>
         document.querySelectorAll('.service-tab').forEach(tab => {
