@@ -1211,9 +1211,9 @@ section,
 }
 
 .services .service-item .details {
-  height: auto;
-  /* min-height: 350px; */
-  /* overflow: hidden; */
+  height: 360px;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 
 }
 
@@ -1937,6 +1937,11 @@ section,
 
 .title-text {
   color: #04ba9b !important;
+  text-transform: uppercase;
+}
+
+.title-text-normal {
+  color: #04ba9b !important;
 }
 
 .title-sub-text {
@@ -1976,7 +1981,7 @@ section,
 .backend-stack {
   position: absolute;
   right: 0px;
-  bottom: 10px;
+  bottom: 5px;
   /* background: #BA049B; */
   padding: 5px 15px;
   border-radius: 8px;
@@ -1985,7 +1990,7 @@ section,
 .frontend-stack {
   position: absolute;
   right: 0px;
-  bottom: 10px;
+  bottom: 5px;
   /* background: #04BA30; */
   padding: 5px 15px;
   border-radius: 8px;
