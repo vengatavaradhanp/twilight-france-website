@@ -12,6 +12,20 @@ async function loadLanguage(lang) {
       }
     });
 
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      if (translations[key]) {
+        el.setAttribute('placeholder', translations[key]);
+      }
+    });
+
+    document.querySelectorAll('[data-i18n-value]').forEach(el => {
+      const key = el.getAttribute('data-i18n-value');
+      if (translations[key]) {
+        el.setAttribute('value', translations[key]);
+      }
+    });
+
     // Optional: Save preference
     localStorage.setItem('language', lang);
   } catch (error) {

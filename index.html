@@ -43,6 +43,31 @@
     height: auto;
     margin-right: 8px;
   }
+
+  @media (max-width: 768px) {
+    .header .cta-btn {
+      display: none;
+    }
+
+    .title-text {
+      text-align: center;
+    }
+  }
+
+
+
+
+  /* @media (width: 960px) and (height: 380px) {
+  .title-text {
+    text-align: center;
+  }
+} */
+  /* 
+@media (min-width: 960px) and (max-width: 974px) and (min-height: 255px) and (max-height: 380px) {
+  .title-text {
+    text-align: center;
+  }
+} */
 </style>
 
 <body class="index-page">
@@ -52,7 +77,7 @@
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/logo3.png" alt="" style="min-height: 60px;">
+        <img src="assets/img/logo3.png" alt="">
         <!-- <h1 class="sitename">Dewi</h1> -->
       </a>
 
@@ -69,7 +94,7 @@
             <a href="index.html#portfolio" data-i18n="portfolio">Portfolio</a>
           </li>
           <li><a href="index.html#contact" data-i18n="contact">Contact</a></li>
-          <li>
+          <!-- <li>
             <div class="position-relative">
               <select class="form-select lang-select" id="language-select" name="language">
                 <option value="English">English </option>
@@ -78,12 +103,24 @@
               <i class="bi bi-globe position-absolute"
                 style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
             </div>
-          </li>
+          </li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about" data-i18n="getStarted">Get Started</a>
+      <div class="position-relative ms-3 lng-btn">
+        <select class="form-select lang-select" id="language-select" name="language">
+          <option value="English">English </option>
+          <option value="French">French</option>
+        </select>
+        <i class="bi bi-globe position-absolute"
+          style="top: 50%; right: 10px; transform: translateY(-50%); pointer-events: none;"></i>
+      </div>
+
+      <a class="cta-btn" href="index.html#contact" data-i18n="getStarted">Get Started</a>
+
+
+
 
     </div>
   </header>
@@ -96,7 +133,8 @@
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100" class="title-text" data-i18n="heroTitle">Innovate Boldly. Build
+        <h2 data-aos="fade-up" data-aos-delay="100" class="title-text" data-i18n="heroTitle"
+          style="text-align: center;">Innovate Boldly. Build
           Brilliantly.</h2>
         <br />
         <p class="text-center" data-aos="fade-up" data-aos-delay="200" data-i18n="heroDesc"> Empowering bold ideas into
@@ -137,13 +175,13 @@
             <br />
             <div class="content ps-0 ps-lg-5">
               <ul>
-                <li><i class="bi bi-check-circle-fill"></i> <span><strong data-i18n="aboutList1Title1">ISO-Certified &
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong data-i18n="aboutList1Title">ISO-Certified &
                       Quality-Driven&nbsp;:</strong></span>&nbsp;<span data-i18n="aboutList1">Our ISO certification
                     ensures that we
                     uphold the
                     highest standards of quality in everything we do, providing reliable and efficient
                     solutions.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span><strong data-i18n="aboutList1Title2">Experts in
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong data-i18n="aboutList2Title">Experts in
                       Advanced
                       Technologies&nbsp;:</strong></span>&nbsp;<span data-i18n="aboutList2">We specialize in leveraging
                     AI,
@@ -151,7 +189,7 @@
                     and
                     seamless platform development to optimize your business processes, streamline operations, and
                     unlock new growth opportunities.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i> <span><strong data-i18n="aboutList1Title3">Customized &
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong data-i18n="aboutList3Title">Customized &
                       Scalable
                       Solutions&nbsp;:</strong></span>&nbsp;<span data-i18n="aboutList3">We create tailored solutions
                     that evolve
@@ -330,7 +368,7 @@
           <div class="col-xl-4 col-md-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/hospitality.jpg" class="img-fluid" alt="">
+                <img src="assets/img/food2.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -347,7 +385,7 @@
           <div class="col-xl-4 col-md-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/education.jpg" class="img-fluid" alt="">
+                <img src="assets/img/education2.jpg" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -459,7 +497,7 @@
 
           <div class="tab-pane fade active show" id="features-tab-1">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -483,7 +521,7 @@
 
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -506,7 +544,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -529,7 +567,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -540,7 +578,7 @@
                   <div class="section-title-2">
                     <h2 class="title-text-light" data-i18n="overview">Overview </h2>
                   </div>
-                  <p data-i18n="phpUseCases">
+                  <p data-i18n="phpOverview">
                     A widely-used scripting language for creating dynamic websites and web applications. PHP powers
                     many content management systems (CMS) and e-commerce platforms.
                   </p>
@@ -567,7 +605,7 @@
                   </div> -->
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -593,7 +631,7 @@
               </div>
 
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -618,7 +656,7 @@
 
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -643,7 +681,7 @@
 
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -669,7 +707,7 @@
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <div class="section-card  p-4 m-0 mb-4"
                   style="box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; border-radius: 8px;">
                   <div class="section-title-2">
@@ -1024,13 +1062,14 @@
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-phone-fill  icon flex-shrink-0"></i>
+              <i class="bi bi-phone-fill  icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a href="enterpise-software-services.html" class="stretched-link"
+                <h4 class="title cos"><a href="enterpise-software-services.html" class="stretched-link"
                     data-i18n="servicesEnterpriseSoftwareDevelopmentTitle">Enterprise Software
                     Development
                   </a></h4>
-                <p class="description" data-i18n="servicesEnterpriseSoftwareDevelopmentDescription">Smart. Scalable.
+                <p class="description hide-under-400" data-i18n="servicesEnterpriseSoftwareDevelopmentDescription">
+                  Smart. Scalable.
                   Built for the Future.
                 </p>
               </div>
@@ -1039,12 +1078,13 @@
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-router icon flex-shrink-0"></i>
+              <i class="bi bi-router icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a href="enterprise-mobility-services.html"
+                <h4 class="title cos"><a href="enterprise-mobility-services.html"
                     data-i18n="servicesEnterpriseMobilityIoTTitle" class="stretched-link">Enterprise Mobility
                     & IoT</a></h4>
-                <p class="description" data-i18n="servicesEnterpriseMobilityIoTDescription">Connected Experiences.
+                <p class="description hide-under-400" data-i18n="servicesEnterpriseMobilityIoTDescription">Connected
+                  Experiences.
                   Smarter Operations. Mobile-First Innovation</p>
               </div>
             </div>
@@ -1052,12 +1092,13 @@
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-robot icon flex-shrink-0"></i>
+              <i class="bi bi-robot icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a href="ai-machine-services.html" class="stretched-link"
+                <h4 class="title cos"><a href="ai-machine-services.html" class="stretched-link"
                     data-i18n="servicesAiMachineLearningTitle">AI & Machine Learning
                     Solutions</a></h4>
-                <p class="description" data-i18n="servicesAiMachineLearningDescription">Smarter Systems. Sharper
+                <p class="description hide-under-400" data-i18n="servicesAiMachineLearningDescription">Smarter Systems.
+                  Sharper
                   Insights. Stronger Outcomes.</p>
               </div>
             </div>
@@ -1065,12 +1106,13 @@
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-shield-lock-fill icon flex-shrink-0"></i>
+              <i class="bi bi-shield-lock-fill icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a data-i18n="servicesCybersecurityComplianceTitle" href="cybersecurity-services.html"
-                    class="stretched-link"> Cybersecurity &
+                <h4 class="title cos"><a data-i18n="servicesCybersecurityComplianceTitle"
+                    href="cybersecurity-services.html" class="stretched-link"> Cybersecurity &
                     Compliance</a></h4>
-                <p class="description" data-i18n="servicesCybersecurityComplianceDescription">Secure by Design.
+                <p class="description hide-under-400" data-i18n="servicesCybersecurityComplianceDescription">Secure by
+                  Design.
                   Compliant by Default.
                 </p>
               </div>
@@ -1079,24 +1121,26 @@
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-cloud-fill icon flex-shrink-0"></i>
+              <i class="bi bi-cloud-fill icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a href="cloud-services.html" class="stretched-link"
+                <h4 class="title cos"><a href="cloud-services.html" class="stretched-link"
                     data-i18n="servicesCloudDevOpsTitle"> Cloud Solutions & DevOps
                   </a></h4>
-                <p class="description" data-i18n="servicesCloudDevOpsDescription">Scalable. Secure. Built for Speed</p>
+                <p class="description hide-under-400" data-i18n="servicesCloudDevOpsDescription">Scalable. Secure. Built
+                  for Speed</p>
               </div>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-gear-fill icon flex-shrink-0"></i>
+              <i class="bi bi-gear-fill icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a href="data-analytics-services.html" data-i18n="servicesDataAnalyticsBITitle"
+                <h4 class="title cos"><a href="data-analytics-services.html" data-i18n="servicesDataAnalyticsBITitle"
                     class="stretched-link">Data Analytics &
                     Business Intelligence</a></h4>
-                <p class="description" data-i18n="servicesDataAnalyticsBISubTitle">Turn Data Into Action. Insights
+                <p class="description hide-under-400" data-i18n="servicesDataAnalyticsBISubTitle">Turn Data Into Action.
+                  Insights
                   Into Impact.</p>
               </div>
             </div>
@@ -1104,12 +1148,13 @@
 
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-laptop icon flex-shrink-0"></i>
+              <i class="bi bi-laptop icon flex-shrink-0 hide-under-400"></i>
               <div>
-                <h4 class="title"><a data-i18n="servicesDigitalTransformationTitle"
+                <h4 class="title cos"><a data-i18n="servicesDigitalTransformationTitle"
                     href="digital-transformation-services.html" class="stretched-link">Digital
                     Transformation Service</a></h4>
-                <p class="description" data-i18n="servicesDigitalTransformationDescription">Turn Data Into Action.
+                <p class="description hide-under-400" data-i18n="servicesDigitalTransformationDescription">Turn Data
+                  Into Action.
                   Insights Into Impact.</p>
               </div>
             </div>
@@ -1268,184 +1313,184 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app1.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/genieMD.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Genie-MD</h4>
-                  <a href="assets/img/app1.png" title="Genie-MD" data-gallery="portfolio-gallery-app"
+                  <a href="assets/img/genieMD.png" title="Genie-MD" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
-            
+
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app2.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/app2.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Hupnos</h4>
                   <a href="assets/img/app2.png" title="Hupnos" data-gallery="portfolio-gallery-product"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app3.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/rucfit.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Rucfit</h4>
-                  <a href="assets/img/app3.png" title="Rucfit" data-gallery="portfolio-gallery-branding"
+                  <a href="assets/img/rucfit.png" title="Rucfit" data-gallery="portfolio-gallery-branding"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app4.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/app4.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Cura</h4>
                   <a href="assets/img/app4.png" title="Cura" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app5.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/easi.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Easiroute</h4>
-                  <a href="assets/img/app5.png" title="Easiroute" data-gallery="portfolio-gallery-app"
+                  <a href="assets/img/easi.png" title="Easiroute" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app6.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/app6.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Verbal Memory</h4>
                   <a href="assets/img/app6.png" title="Verbal Memory" data-gallery="portfolio-gallery-product"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item mobile-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app7.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/perinatal.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Perinatal Access</h4>
-                  <a href="assets/img/app7.png" title="Perinatal Access" data-gallery="portfolio-gallery-branding"
+                  <a href="assets/img/perinatal.png" title="Perinatal Access" data-gallery="portfolio-gallery-branding"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item product-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app8.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/appxpay.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>AppXpay</h4>
-                  <a href="assets/img/app8.png" title="AppXpay" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/appxpay.png" title="AppXpay" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item product-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app9.PNG" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/pigeon.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Pigeon Auction</h4>
-                  <a href="assets/img/app9.PNG" title="Pigeon Auction" data-gallery="portfolio-gallery-app"
+                  <a href="assets/img/pigeon.png" title="Pigeon Auction" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item product-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/image.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/image.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>OpenWorx</h4>
                   <a href="assets/img/image.png" title="OpenWorx" data-gallery="portfolio-gallery-product"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app11.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/sodexo.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Sodexo</h4>
-                  <a href="assets/img/app11.png" title="Sodexo" data-gallery="portfolio-gallery-branding"
+                  <a href="assets/img/sodexo.png" title="Sodexo" data-gallery="portfolio-gallery-branding"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app12.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/spl.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>SPL</h4>
-                  <a href="assets/img/app12.png" title="SPL" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/spl.png" title="SPL" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app13.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/lenovo2.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Lenovo</h4>
-                  <a href="assets/img/app13.png" title="Lenovo" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/lenovo2.png" title="Lenovo" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app14.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/keywe.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>KeyWe</h4>
-                  <a href="assets/img/app14.png" title="KeyWe" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/keywe.png" title="KeyWe" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
@@ -1453,14 +1498,14 @@
 
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app16.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/fleet.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Fleet Management</h4>
-                  <a href="assets/img/app16.png" title="Fleet Management" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/fleet.png" title="Fleet Management" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
@@ -1468,53 +1513,53 @@
 
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app20.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/ajaffe.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>AJAFFE</h4>
-                  <a href="assets/img/app20.png" title="AJAFFE" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/ajaffe.png" title="AJAFFE" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app18.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/ssm.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Sachinler France</h4>
-                  <a href="assets/img/app18.png" title="Sachinler France" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/ssm.png" title="Sachinler France" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item web-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app19.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/bistromd.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Bistro MD</h4>
-                  <a href="assets/img/app19.png" title="Bistro MD" data-gallery="portfolio-gallery-book"
+                  <a href="assets/img/bistromd.png" title="Bistro MD" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item ml-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/app21.png" class="img-fluid" alt="" style="height: 300px;">
+              <div class="portfolio-content" style="height: 250px;">
+                <img src="assets/img/app21.png" class="img-fluid" alt="" style="height: 100%; width: 100%">
                 <div class="portfolio-info">
                   <h4>Smart Builing</h4>
                   <a href="assets/img/app21.png" title="Smart Builing" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                      class="bi bi-link-45deg"></i></a> -->
                 </div>
               </div>
             </div>
@@ -1540,7 +1585,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="height: 300px;"></div>
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="" style="height: 100%; width: 100%"></div>
               <div class="member-info">
                 <h4>Walter White</h4>
                 <span>Chief Executive Officer</span>
@@ -1643,19 +1688,19 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" data-i18n-placeholder="yourName" placeholder="Your Name" required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" data-i18n-placeholder="yourEmail" placeholder="Your Email" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" class="form-control" name="subject" data-i18n-placeholder="subject" placeholder="Subject" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <textarea class="form-control" name="message" rows="4" data-i18n-placeholder="message" placeholder="Message" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -1663,7 +1708,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
 
-                  <button type="submit">Send Message</button>
+                  <button type="submit" data-i18n="sendMessage"></button>
                 </div>
 
               </div>
@@ -1701,35 +1746,40 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4 data-i18n="useFulLinks">Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html" target="_blank">Terms &
-                Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html" target="_blank">Privacy policy</a>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html" data-i18n="home">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#about" data-i18n="about">About</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#services" data-i18n="services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#technologies"
+                data-i18n="technologies">Technologies</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio" data-i18n="portfolio">Portfolio</a>
             </li>
-            <li><i class="bi bi-chevron-right"></i> <a href="legal.html" target="_blank">Legal Notice</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact" data-i18n="contact">Contact</a></li>
+
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4 data-i18n="ourServices">Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="terms-of-services.html" target="_blank"
+                data-i18n="termsServices">Terms &
+                Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="privacy-policy.html" target="_blank"
+                data-i18n="privacyPolicy">Privacy policy</a>
+            </li>
+            <li><i class="bi bi-chevron-right"></i> <a href="legal.html" target="_blank" data-i18n="legalNotice">Legal
+                Notice</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <h4 data-i18n="ourNewsletter"></h4>
+          <p data-i18n="ourNewsletterDesc"></p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" data-i18n-value="subscribe" value="Subscribe"
+                data-i18n="subscribe"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your subscription request has been sent. Thank you!</div>
@@ -1740,7 +1790,7 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">RPDC IT Solutions</strong> <span>All Rights
+      <p>© <span data-i18n="copyright">Copyright</span> <strong class="px-1 sitename">RPDC IT Solutions</strong> <span data-i18n="allRights">All Rights
           Reserved</span></p>
     </div>
 
