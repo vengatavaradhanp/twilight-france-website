@@ -249,7 +249,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 60px;
   margin-right: 8px;
 }
 
@@ -1244,6 +1244,7 @@ section,
   gap: 30px;
   align-items: stretch;
 }
+
 .details {
   flex: 1;
   display: flex;
@@ -1286,11 +1287,13 @@ section,
     height: 349px;
   }
 }
+
 @media (max-width: 399px) {
   .hide-under-400 {
     display: none !important;
   }
-  .cos{
+
+  .cos {
     text-align: center;
   }
 }
@@ -2068,6 +2071,7 @@ section,
   border-radius: 8px;
   color: lightgray;
 }
+
 .frontend-stack {
   position: absolute;
   right: 0px;
@@ -2084,37 +2088,79 @@ section,
 
 @media screen and (max-width: 320px) {
   .frontend-stack {
-      position: absolute;
-      right: 0px;
-      bottom: 29px;
-      /* background: #04BA30; */
-      padding: 5px 15px;
-      border-radius: 8px;
-      color: lightgray;
+    position: absolute;
+    right: 0px;
+    bottom: 29px;
+    /* background: #04BA30; */
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: lightgray;
   }
 
   .section-title-2 h2 {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .section-title-2 h1 {
-      font-size: 15px;
+    font-size: 14px;
   }
 
   .backend-stack {
-      position: absolute;
-      right: 0px;
-      bottom: 30px;
-      /* background: #BA049B; */
-      padding: 5px 15px;
-      border-radius: 8px;
-      color: lightgray;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+    /* background: #BA049B; */
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: lightgray;
   }
 
 
-  .frontend-stack{
+  .frontend-stack {
     position: absolute;
     right: 0px;
     bottom: 29px !important;
   }
+}
+
+@media (max-width: 485px) and (min-width: 323px) {
+  .section-title-2 h1 {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 993px) and (min-width: 768px) {
+  .section-title-2 h1 {
+    font-size: 16.5px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1006px) {
+  .section-title-2 h1 {
+    font-size: 20px;
+  }
+}
+
+.contact-btn {
+  border: 0px;
+  padding: 10px 25px;
+  background: #04ba9b;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #04ba9b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: sans-serif;
+}
+
+.btn-link:hover {
+  opacity: 0.8;
+  color: white;
 }

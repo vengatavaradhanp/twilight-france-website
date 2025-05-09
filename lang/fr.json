@@ -517,5 +517,8 @@
   "subject": "Sujet",
   "message": "Message",
   "allRights": "Tous droits réservés.",
-  "copyright": "Droit d'auteur"
+  "copyright": "Droit d'auteur",
+  "address": "Adresse",
+  "emailUs": "Envoyez-nous un e-mail",
+  "contactUs": "Contactez-nous"
 }
